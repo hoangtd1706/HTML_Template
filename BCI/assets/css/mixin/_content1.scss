@@ -16,8 +16,13 @@
                 img {
                     position: absolute;
                     bottom: 0;
+
+                    &#icon_left {
+                        left: -100px;
+                    }
                 }
             }
+
 
             &.icon_right {
                 img {
@@ -30,6 +35,14 @@
 
                     &.icon_mid {
                         top: 50%;
+                    }
+
+                    &#icon_right_1 {
+                        top: -200px;
+                    }
+
+                    &#icon_right_2 {
+                        right: -100px;
                     }
                 }
             }

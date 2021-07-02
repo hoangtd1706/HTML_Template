@@ -13,25 +13,25 @@
 </head>
 
 <body>
-    <header>
-        <div class="site39_header_col0">
-            <div class="nav">
-                <div class="header-logo"><img src="assets/img/bci-header-logo.png" alt="logo"></div>
-                <div class="btn_menu">
-                    <span class="line"></span>
-                </div>
-                <div class="menu">
-                    <ul class="menu-top">
-                        <li class="menu-link"><a href="#">Tư vấn doanh nghiệp</a></li>
-                        <li class="menu-link"><a href="#">Đào tạo marketing trực tuyến</a></li>
-                        <li class="menu-link"><a href="#">Kinh doanh dịch vụ f&b</a></li>
-                        <li class="menu-link"><a href="#">Tin tức - sự kiện</a></li>
-                        <li class="menu-link"><a href="#">Liên hệ</a></li>
-                        <li><button class="btn-search" type="button"><img src="assets/img/icon/icon-search.png"
-                                    alt="search"></button></li>
-                    </ul>
-                </div>
+    <header class="site39_header_col0">
+        <div class="head_bg"></div>
+        <div class="nav">
+            <div class="header-logo"><img src="assets/img/bci-header-logo.png" alt="logo"></div>
+            <div class="btn_menu">
+                <span class="line"></span>
             </div>
+            <div class="menu">
+                <ul class="menu-top">
+                    <li class="menu-link"><a href="#">Tư vấn doanh nghiệp</a></li>
+                    <li class="menu-link"><a href="#">Đào tạo marketing trực tuyến</a></li>
+                    <li class="menu-link"><a href="#">Kinh doanh dịch vụ f&b</a></li>
+                    <li class="menu-link"><a href="#">Tin tức - sự kiện</a></li>
+                    <li class="menu-link"><a href="#">Liên hệ</a></li>
+                    <li><button class="btn-search" type="button"><img src="assets/img/icon/icon-search.png"
+                                alt="search"></button></li>
+                </ul>
+            </div>
+            <div class="close_menu"></div>
         </div>
     </header>
     <div class="site39_bann_col0_slide">
@@ -221,11 +221,11 @@
     <div class="site39_intr_col0_bci">
         <div class="background_icon">
             <div class="icon icon_left">
-                <img src="assets/img/icon/icon_home_left.png" alt="bci_icon">
+                <img src="assets/img/icon/icon_home_left.png" id="icon_left" alt="bci_icon">
             </div>
             <div class="icon icon_right">
-                <img class="icon_top" src="assets/img/icon/icon_right_top.png" alt="bci_icon">
-                <img class="icon_mid" src="assets/img/icon/icon_right_mid.png" alt="bci_icon">
+                <img class="icon_top" id="icon_right_1" src="assets/img/icon/icon_right_top.png" alt="bci_icon">
+                <img class="icon_mid" id="icon_right_2" src="assets/img/icon/icon_right_mid.png" alt="bci_icon">
             </div>
         </div>
         <div class="intro_content">
@@ -326,14 +326,12 @@
                 <a href="#facebook"><img src="assets/img/icon/social_facebook.png" alt="BCI fanpage"></a>
                 <a href="#youtube"><img src="assets/img/icon/social_youtube.png" alt="BCI youtube"></a>
                 <a href="#zalo"><img src="assets/img/icon/social_zalo.png" alt="BCI zalo"></a>
-                <a href="#toTop"><img src="assets/img/totop.png" alt=""></a>
+                <a class="to_top"><img src="assets/img/totop.png" alt=""></a>
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
