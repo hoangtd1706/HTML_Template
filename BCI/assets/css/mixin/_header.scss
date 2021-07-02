@@ -17,52 +17,55 @@
             }
         }
 
-        .menu-top {
+        .menu {
             display: flex;
-            justify-content: space-between;
             align-items: center;
 
-            li {
-                padding-left: 40px;
+            .menu-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
-                &.menu-link {
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: 24px;
-                    position: relative;
+                li {
+                    padding-left: 40px;
 
-                    a {
-                        text-transform: uppercase;
+                    &.menu-link {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        position: relative;
+
+                        a {
+                            text-transform: uppercase;
+                        }
+
+                        ::after {
+                            content: '';
+                            position: absolute;
+                            background-color: $cl_black;
+                            top: 25px;
+                            left: 40px;
+                            width: 0px;
+                            height: 1px;
+                            transition: .5s;
+                        }
+
+                        :hover {
+                            text-decoration: none;
+                            color: $cl_black;
+                        }
+
+                        :hover::after {
+                            width: calc(100% - 40px);
+                        }
                     }
 
-                    ::after {
-                        content: '';
-                        position: absolute;
-                        background-color: $cl_black;
-                        top: 25px;
-                        left: 40px;
-                        width: 0px;
-                        height: 1px;
-                        transition: .5s;
+                    .btn-search {
+                        border: none;
+                        background-color: transparent;
                     }
-
-                    :hover {
-                        text-decoration: none;
-                        color: $cl_black;
-                    }
-
-                    :hover::after {
-                        width: calc(100% - 40px);
-                    }
-                }
-
-                .btn-search {
-                    border: none;
-                    background-color: transparent;
                 }
             }
-
-
         }
     }
 }
