@@ -1,0 +1,32 @@
+.site39_bann_col0_slide {
+    position: relative;
+    padding: 117px 0 200px;
+
+    .banner_title {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        .title {
+            text-transform: uppercase;
+            font-size: 56px;
+            text-align: center;
+            background-color: hsla(0, 0%, 100%, .5);
+            display: inline-block;
+            padding: 5px 40px;
+            margin-top: 10px;
+            box-shadow: 0 0 60px 5px #00000030;
+        }
+    }
+
+    .banner_homepage {
+        max-width: 1284px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
