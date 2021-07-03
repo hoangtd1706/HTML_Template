@@ -1,6 +1,9 @@
 .site39_bann_col0_slide {
     position: relative;
     padding: 117px 0 200px;
+    overflow: hidden;
+   top: 100px;
+    z-index: 1000;
 
     .banner_title {
         position: absolute;

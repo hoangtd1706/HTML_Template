@@ -1,6 +1,17 @@
+$cl_blue_primary : #48D3D8;
+$cl_blue_secondary : rgba(72, 211, 216, 0.3);
+$cl_gray :#424242;
+$cl_light :#F6F7F9;
+$cl_black :#1A1A1A;
+$cl_text_gray_5c: #5C5C5C;
+$cl_text_gray_5a: #5a5a5a;
+$cl_text_gray1: #333333;
+$cl_dot:#0CB1B1;
+
 .site39_intr_col0_bci {
     position: relative;
     background-color: $cl_blue_primary;
+    overflow: hidden;
 
     .background_icon {
         position: absolute;
@@ -30,7 +41,7 @@
                     position: absolute;
 
                     &.icon_top {
-                        margin-right: 359px;
+                        margin-right: 168px;
                     }
 
                     &.icon_mid {
@@ -53,6 +64,9 @@
         padding-top: 194px;
         max-width: 770px;
         height: 1010px;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: 1000;
 
         .box_item {
 
@@ -67,6 +81,7 @@
             }
 
             &:nth-child(2) {
+                position: relative;
                 margin-top: 52px;
                 width: 50%;
                 float: right;

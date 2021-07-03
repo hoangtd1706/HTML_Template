@@ -1,3 +1,18 @@
+* {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    width: 100vw;
+}
+
+body {
+    overflow: overlay;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -48,6 +63,30 @@ ul,
 li {
     padding: 0;
     margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    position: absolute;
+    width: 8px;
+    background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #97979760;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(151, 151, 151, 0.905);
 }
 
 
