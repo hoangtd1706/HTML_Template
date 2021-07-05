@@ -27,18 +27,20 @@ $cl_dot:#0CB1B1;
             &.item_left {
                 max-width: 700px;
 
-                &::before {
-                    content: 'contact';
+                .animate_text {
                     position: absolute;
-                    font-family: Montserrat;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 122px;
-                    line-height: 171.5%;
-                    letter-spacing: 0.035em;
-                    text-transform: uppercase;
-                    color: #FFFFFF;
                     top: 0;
+
+                    span {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 122px;
+                        line-height: 171.5%;
+                        letter-spacing: 0.035em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
                 }
 
                 p {
@@ -69,11 +71,40 @@ $cl_dot:#0CB1B1;
             }
 
             &.item_right {
-
+                display: flex;
+                flex-flow: wrap;
                 max-width: 330px;
+                justify-content: flex-end;
 
                 .foot_logo {
-                    float: right;
+                    width: 100%;
+
+                    img {
+                        float: right;
+                    }
+                }
+
+                .social {
+                    .foot_icon {
+                        display: flex;
+
+                        a {
+                            position: relative;
+                            background-color: $cl_blue_primary;
+                            height: 37px;
+                            width: 37px;
+                            margin: 7px;
+
+                            img {
+                                margin-right: auto;
+                                margin-left: auto;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
                 }
 
                 .content {
@@ -94,31 +125,33 @@ $cl_dot:#0CB1B1;
             }
         }
     }
+}
 
-    .social {
-        position: absolute;
-        right: 65px;
+.to_top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background-color: $cl_blue_primary;
+    height: 37px;
+    width: 37px;
+    cursor: pointer;
+    z-index: 10000;
+    transition: all .5s ease;
 
-        .foot_icon {
-            display: flex;
-            flex-flow: column;
+    &:focus-visible {
+        outline: none
+    }
 
-            a {
-                position: relative;
-                background-color: $cl_blue_primary;
-                height: 37px;
-                width: 37px;
-                margin: 7px;
+    &:focus {
+        outline: none
+    }
 
-                img {
-                    margin-right: auto;
-                    margin-left: auto;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
+    &:hover {
+        img {
+            animation: btn_top_move 2s infinite;
+            transition: all 2s ease;
         }
     }
 }

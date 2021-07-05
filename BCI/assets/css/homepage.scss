@@ -46,18 +46,16 @@ svg {
     }
 }
 
-/*  .Line__mask,
-        .Line__svg {
-            position: absolute;
-        } */
-
-
 /* banner site39_bann_col0_slide*/
-@import 'mixin/banner';
+@import 'homepage/banner';
 /* end banner */
-/* content site39_intr_col0_bci*/
-@import 'mixin/content1';
-/* site39_pro_col12_danhmuckd */
-@import 'mixin/content2';
+
+/* content */
+@import 'homepage/content1';
+@import 'homepage/content2';
+/* end content */
+
+/* footer */
 @import 'mixin/footer';
+
 @import 'mixin/responsive';

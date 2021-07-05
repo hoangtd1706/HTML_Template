@@ -1,0 +1,220 @@
+@import 'mixin/fonts';
+
+$cl_blue_primary : #48D3D8;
+$cl_blue_secondary : rgba(72, 211, 216, 0.3);
+$cl_gray :#424242;
+$cl_light :#F6F7F9;
+$cl_black :#1A1A1A;
+$cl_text_gray_5c: #5C5C5C;
+$cl_text_gray_5a: #5a5a5a;
+$cl_text_gray1: #333333;
+$cl_dot:#0CB1B1;
+
+@import 'mixin/root';
+/* header  site39_header_col0*/
+@import 'mixin/header';
+/* end header */
+
+.Line,
+.Line__mask {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+.Line {
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+    height: 0;
+    transition: all .8s ease;
+
+    .Line__svg {
+        svg {
+            stroke-width: 1px;
+            fill-rule: evenodd;
+            fill: none;
+            stroke: #41f3b7;
+        }
+    }
+}
+
+main {
+    position: relative;
+}
+
+/* banner site39_bann_col0_slide*/
+@import 'tuvan/banner';
+
+/* site39_html_col0_tuvandn */
+.site39_html_col0_tuvandn {
+    margin-top: 179px;
+
+    .btn_regis_now {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        width: 132px;
+        height: 32px;
+        background: #48D3D8;
+        //padding: 8px 6px;
+        text-align: center;
+        cursor: pointer;
+
+        span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 32px;
+            text-align: justify;
+            text-transform: uppercase;
+            color: #fff;
+            z-index: 1;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            border: 1px solid #48D3D8;
+            background-color: #fff;
+            width: 0;
+            height: 32px;
+            left: 0;
+            transition: all .5s;
+            z-index: 0;
+        }
+
+        &:hover {
+            background-color: transparent;
+
+            span {
+                color: #fff;
+            }
+
+            &::before {
+                width: 132px;
+            }
+        }
+    }
+
+    .service_top {
+        display: flex;
+
+        .service_item {
+            background-color: #fff;
+            padding: 32px 25px 40px;
+
+
+            .service_title {
+                h2 {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 21px;
+                    line-height: 150.6%;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+
+            .service_body {
+                max-height: 320px;
+                overflow-y: scroll;
+                margin: 36px 0 40px;
+
+                .text {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 150.5%;
+                    text-align: center;
+                    overflow-y: scroll;
+                    color: #000;
+                }
+            }
+
+            &:nth-child(odd) {
+                background-color: #000;
+
+                .service_title {
+                    h2 {
+                        color: #fff;
+                    }
+                }
+
+                .service_body {
+                    .text {
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .service_bot {
+        margin-top: 115px;
+
+        .header {
+            h2 {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 140.1%;
+                text-align: center;
+                text-transform: uppercase;
+                color: #424242;
+            }
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            margin-top: 104px;
+
+            .content_item {
+                width: calc(100% / 3);
+                display: flex;
+                flex-flow: wrap;
+                justify-content: center;
+
+                .content_text {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 29px;
+
+                    p {
+                        margin-right: auto;
+                        margin-left: auto;
+                        max-width: 180px;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 150.5%;
+                        color: #5C5C5C;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* end banner */
+
+/* footer */
+@import 'mixin/footer';
+
+@import 'mixin/responsive';

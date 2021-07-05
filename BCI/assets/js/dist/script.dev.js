@@ -41,13 +41,17 @@ $(document).ready(function () {
 
     if (toTop < 100) {
       $('.Line').css('height', '0px');
-    } else {
+    } else if (toTop > 100 && page_height - toTop - 1000 > 10) {
       $('.Line').css('height', '505px');
       $('.Line__svg').css('transform', 'matrix(1,0,0,1,0,' + (-717 - toTop));
+    } else {
+      $('.Line').css('height', '100vh');
     }
 
-    if (page_height - toTop - 1000 < 10) {
-      $('.Line').css('height', '100vh');
+    if (page_height - toTop - 1000 > 10) {
+      $('.to_top').hide();
+    } else {
+      $('.to_top').show();
     }
 
     toTop > 150 ? gsap.to("#icon_right_1", {
