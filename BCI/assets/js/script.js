@@ -34,6 +34,7 @@ $(document).ready(function () {
         }, 500, 'swing');
     })
     $(window).scroll(function () {
+        let page_width = $('body').width();
         let page_height = $('body').height();
         let window_height = $(window).height();
         let toTop = $(this).scrollTop();
@@ -78,12 +79,15 @@ $(document).ready(function () {
             y: 100
         });
 
-        (toTop > 3060) ? gsap.to("#btn_social", {
-            duration: 1,
-            y: -230
-        }): gsap.to("#btn_social", {
-            duration: 1,
-            y: 0
-        })
+        if (page_width < 1200) {
+
+            (toTop > 3060) ? gsap.to("#btn_social", {
+                duration: 1,
+                y: -230
+            }): gsap.to("#btn_social", {
+                duration: 1,
+                y: 0
+            })
+        }
     })
 })

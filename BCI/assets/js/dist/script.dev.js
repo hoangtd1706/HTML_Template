@@ -33,6 +33,7 @@ $(document).ready(function () {
     }, 500, 'swing');
   });
   $(window).scroll(function () {
+    var page_width = $('body').width();
     var page_height = $('body').height();
     var window_height = $(window).height();
     var toTop = $(this).scrollTop();
@@ -72,12 +73,15 @@ $(document).ready(function () {
       duration: 1,
       y: 100
     });
-    toTop > 3060 ? gsap.to("#btn_social", {
-      duration: 1,
-      y: -230
-    }) : gsap.to("#btn_social", {
-      duration: 1,
-      y: 0
-    });
+
+    if (page_width < 1200) {
+      toTop > 3060 ? gsap.to("#btn_social", {
+        duration: 1,
+        y: -230
+      }) : gsap.to("#btn_social", {
+        duration: 1,
+        y: 0
+      });
+    }
   });
 });
