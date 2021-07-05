@@ -37,7 +37,19 @@ $(document).ready(function () {
     var page_height = $('body').height();
     var window_height = $(window).height();
     var toTop = $(this).scrollTop();
-    console.log(toTop);
+    var document_height = $(document).height(); //console.log(page_height - toTop - 1000);
+
+    if (toTop < 100) {
+      $('.Line').css('height', '0px');
+    } else {
+      $('.Line').css('height', '505px');
+      $('.Line__svg').css('transform', 'matrix(1,0,0,1,0,' + (-717 - toTop));
+    }
+
+    if (page_height - toTop - 1000 < 10) {
+      $('.Line').css('height', '100vh');
+    }
+
     toTop > 150 ? gsap.to("#icon_right_1", {
       duration: 1,
       y: 200
