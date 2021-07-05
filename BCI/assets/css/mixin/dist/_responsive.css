@@ -13,59 +13,6 @@
   z-index: 999;
 }
 
-.btn_menu {
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 30px;
-  cursor: pointer;
-  padding: 5px;
-  z-index: 1001;
-}
-.btn_menu .line {
-  background-color: #1A1A1A;
-  position: relative;
-  display: block;
-  height: 3px;
-  width: 18px;
-}
-.btn_menu .line::before {
-  position: absolute;
-  content: "";
-  background-color: #1A1A1A;
-  width: 18px;
-  height: 3px;
-  top: -6px;
-  transition: all 0.3s;
-}
-.btn_menu .line::after {
-  position: absolute;
-  content: "";
-  background-color: #1A1A1A;
-  width: 18px;
-  height: 3px;
-  top: 6px;
-  transition: all 0.3s;
-}
-.btn_menu.active .line {
-  background-color: #000;
-  height: 20px;
-  width: 20px;
-}
-.btn_menu.active .line::before {
-  background-color: #fff;
-  -webkit-transform: translateY(6px) rotate(45deg);
-  -ms-transform: translateY(6px) rotate(45deg);
-  transform: translateY(6px) rotate(45deg);
-}
-.btn_menu.active .line::after {
-  background-color: #fff;
-  top: -6px;
-  -webkit-transform: translateY(6px) rotate(-45deg);
-  -ms-transform: translateY(6px) rotate(-45deg);
-  transform: translateY(6px) rotate(-45deg);
-}
-
 @media (max-width: 1366px) {
   .site39_header_col0 .nav .header-logo {
     height: 60px;
@@ -103,7 +50,7 @@
   .site39_header_col0 .nav .menu .menu-top {
     display: none;
     position: fixed;
-    right: -440px;
+    right: 0px;
     height: 100vh;
     background-color: #fff;
     top: 0;
@@ -116,12 +63,12 @@
     animation: menuMove 0.8s;
   }
   .site39_header_col0 .nav .menu.active .menu-top {
-    margin-top: 100px;
+    display: block;
     flex-flow: column;
     align-items: flex-end;
-    margin-right: 20px;
+    padding: 100px 26px;
   }
-  .site39_header_col0 .nav .menu.active .menu-top .menu-link {
+  .site39_header_col0 .nav .menu.active .menu-top li {
     float: right;
     margin-top: 30px;
     font-size: 20px;

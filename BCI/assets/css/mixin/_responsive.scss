@@ -26,66 +26,7 @@ $cl_dot:#0CB1B1;
     }
 }
 
-.btn_menu {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 30px;
-    cursor: pointer;
-    padding: 5px;
-    z-index: 1001;
 
-    .line {
-        background-color: $cl_black;
-        position: relative;
-        display: block;
-        height: 3px;
-        width: 18px;
-
-        &::before {
-            position: absolute;
-            content: '';
-            background-color: $cl_black;
-            width: 18px;
-            height: 3px;
-            top: -6px;
-            transition: all .3s;
-        }
-
-        &::after {
-            position: absolute;
-            content: '';
-            background-color: $cl_black;
-            width: 18px;
-            height: 3px;
-            top: 6px;
-            transition: all .3s;
-        }
-    }
-
-    &.active {
-        .line {
-            background-color: #000;
-            height: 20px;
-            width: 20px;
-
-            &::before {
-                background-color: #fff;
-                -webkit-transform: translateY(6px) rotate(45deg);
-                -ms-transform: translateY(6px) rotate(45deg);
-                transform: translateY(6px) rotate(45deg);
-            }
-
-            &::after {
-                background-color: #fff;
-                top: -6px;
-                -webkit-transform: translateY(6px) rotate(-45deg);
-                -ms-transform: translateY(6px) rotate(-45deg);
-                transform: translateY(6px) rotate(-45deg);
-            }
-        }
-    }
-}
 
 @media (max-width:1366px) {
     .site39_header_col0 {
@@ -146,11 +87,9 @@ $cl_dot:#0CB1B1;
 
             .menu {
                 .menu-top {
-
                     display: none;
-
                     position: fixed;
-                    right: -440px;
+                    right: 0px;
                     height: 100vh;
                     background-color: #fff;
                     top: 0;
@@ -165,12 +104,12 @@ $cl_dot:#0CB1B1;
                     animation: menuMove .8s;
 
                     .menu-top {
-                        margin-top: 100px;
+                        display: block;
                         flex-flow: column;
                         align-items: flex-end;
-                        margin-right: 20px;
+                        padding: 100px 26px;
 
-                        .menu-link {
+                        li {
                             float: right;
                             margin-top: 30px;
                             font-size: 20px;

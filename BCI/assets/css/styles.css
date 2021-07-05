@@ -99,6 +99,8 @@ li {
   height: 100px;
   position: fixed;
   z-index: 10000;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
 }
 
 .site39_header_col0 .head_bg {
@@ -108,6 +110,74 @@ li {
   background-color: #fff;
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
+}
+
+.site39_header_col0 .btn_menu {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  padding: 5px;
+  height: 28px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 1001;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.site39_header_col0 .btn_menu .line {
+  background-color: #1A1A1A;
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 18px;
+  top: 7px;
+}
+
+.site39_header_col0 .btn_menu .line::before {
+  position: absolute;
+  content: '';
+  background-color: #1A1A1A;
+  width: 18px;
+  height: 3px;
+  top: -6px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.site39_header_col0 .btn_menu .line::after {
+  position: absolute;
+  content: '';
+  background-color: #1A1A1A;
+  width: 18px;
+  height: 3px;
+  top: 6px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.site39_header_col0 .btn_menu.active {
+  top: 22px;
+}
+
+.site39_header_col0 .btn_menu.active .line {
+  background-color: #000;
+  height: 20px;
+  width: 18px;
+}
+
+.site39_header_col0 .btn_menu.active .line::before {
+  background-color: #fff;
+  -webkit-transform: translateY(14px) rotate(45deg);
+  transform: translateY(14px) rotate(45deg);
+}
+
+.site39_header_col0 .btn_menu.active .line::after {
+  background-color: #fff;
+  top: -6px;
+  -webkit-transform: translateY(14px) rotate(-45deg);
+  transform: translateY(14px) rotate(-45deg);
 }
 
 .site39_header_col0 .nav {
@@ -126,6 +196,8 @@ li {
 .site39_header_col0 .nav .header-logo {
   height: 71px;
   z-index: 10000;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .site39_header_col0 .nav .header-logo img {
@@ -213,6 +285,22 @@ li {
 .site39_header_col0.is-menu .nav .menu .menu-top li .btn-search {
   margin-top: 0;
   opacity: 1;
+}
+
+.site39_header_col0.minimal {
+  height: 60px;
+}
+
+.site39_header_col0.minimal .btn_menu {
+  top: 16px;
+}
+
+.site39_header_col0.minimal .btn_menu.active {
+  top: 9px;
+}
+
+.site39_header_col0.minimal .nav .header-logo {
+  height: 33px;
 }
 
 /* end header */
@@ -619,65 +707,6 @@ li {
   z-index: 999;
 }
 
-.btn_menu {
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 30px;
-  cursor: pointer;
-  padding: 5px;
-  z-index: 1001;
-}
-
-.btn_menu .line {
-  background-color: #1A1A1A;
-  position: relative;
-  display: block;
-  height: 3px;
-  width: 18px;
-}
-
-.btn_menu .line::before {
-  position: absolute;
-  content: '';
-  background-color: #1A1A1A;
-  width: 18px;
-  height: 3px;
-  top: -6px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.btn_menu .line::after {
-  position: absolute;
-  content: '';
-  background-color: #1A1A1A;
-  width: 18px;
-  height: 3px;
-  top: 6px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.btn_menu.active .line {
-  background-color: #000;
-  height: 20px;
-  width: 20px;
-}
-
-.btn_menu.active .line::before {
-  background-color: #fff;
-  -webkit-transform: translateY(6px) rotate(45deg);
-  transform: translateY(6px) rotate(45deg);
-}
-
-.btn_menu.active .line::after {
-  background-color: #fff;
-  top: -6px;
-  -webkit-transform: translateY(6px) rotate(-45deg);
-  transform: translateY(6px) rotate(-45deg);
-}
-
 @media (max-width: 1366px) {
   .site39_header_col0 .nav .header-logo {
     height: 60px;
@@ -717,7 +746,7 @@ li {
   .site39_header_col0 .nav .menu .menu-top {
     display: none;
     position: fixed;
-    right: -440px;
+    right: 0px;
     height: 100vh;
     background-color: #fff;
     top: 0;
@@ -732,7 +761,7 @@ li {
             animation: menuMove .8s;
   }
   .site39_header_col0 .nav .menu.active .menu-top {
-    margin-top: 100px;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
@@ -740,9 +769,9 @@ li {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-right: 20px;
+    padding: 100px 26px;
   }
-  .site39_header_col0 .nav .menu.active .menu-top .menu-link {
+  .site39_header_col0 .nav .menu.active .menu-top li {
     float: right;
     margin-top: 30px;
     font-size: 20px;

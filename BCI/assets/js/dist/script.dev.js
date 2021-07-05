@@ -73,5 +73,16 @@ $(document).ready(function () {
       duration: 1,
       y: 100
     });
+    toTop > 300 ? changeSizeMenu(true) : changeSizeMenu(false);
   });
+
+  var changeSizeMenu = function changeSizeMenu(event) {
+    if (event == true) {
+      if ($('.site39_header_col0').hasClass('minimal') == false) {
+        $('.site39_header_col0').addClass('minimal');
+      }
+    } else {
+      $('.site39_header_col0').removeClass('minimal');
+    }
+  };
 });

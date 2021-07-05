@@ -79,5 +79,17 @@ $(document).ready(function () {
             y: 100
         });
 
+        (toTop > 300) ? changeSizeMenu(true): changeSizeMenu(false);
+
     })
+
+    let changeSizeMenu = (event) => {
+        if (event == true) {
+            if ($('.site39_header_col0').hasClass('minimal') == false) {
+                $('.site39_header_col0').addClass('minimal');
+            }
+        } else {
+            $('.site39_header_col0').removeClass('minimal');
+        }
+    }
 })
