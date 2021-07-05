@@ -73,15 +73,5 @@ $(document).ready(function () {
       duration: 1,
       y: 100
     });
-
-    if (page_width < 1200) {
-      toTop > 3060 ? gsap.to("#btn_social", {
-        duration: 1,
-        y: -230
-      }) : gsap.to("#btn_social", {
-        duration: 1,
-        y: 0
-      });
-    }
   });
 });

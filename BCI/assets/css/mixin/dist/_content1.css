@@ -39,7 +39,6 @@
 .site39_intr_col0_bci .box_content {
   padding-top: 194px;
   max-width: 770px;
-  height: 1010px;
   margin-right: auto;
   margin-left: auto;
   z-index: 1000;
@@ -56,6 +55,7 @@
 .site39_intr_col0_bci .box_content .box_item:nth-child(2) {
   position: relative;
   margin-top: 52px;
+  margin-bottom: 141px;
   width: 50%;
   float: right;
   font-family: Montserrat;

@@ -63,7 +63,7 @@ $cl_dot:#0CB1B1;
     .box_content {
         padding-top: 194px;
         max-width: 770px;
-        height: 1010px;
+        //height: 1010px;
         margin-right: auto;
         margin-left: auto;
         z-index: 1000;
@@ -83,6 +83,7 @@ $cl_dot:#0CB1B1;
             &:nth-child(2) {
                 position: relative;
                 margin-top: 52px;
+                margin-bottom: 141px;
                 width: 50%;
                 float: right;
                 font-family: Montserrat;
