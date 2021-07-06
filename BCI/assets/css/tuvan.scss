@@ -52,167 +52,90 @@ main {
 
 /* banner site39_bann_col0_slide*/
 @import 'tuvan/banner';
+/* end banner */
 
 /* site39_html_col0_tuvandn */
-.site39_html_col0_tuvandn {
-    margin-top: 179px;
+@import 'tuvan/content1';
+/* site39_bann_col0_slide2 */
+@import 'tuvan/content2';
 
-    .btn_regis_now {
-        position: relative;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-        width: 132px;
-        height: 32px;
-        background: #48D3D8;
-        //padding: 8px 6px;
-        text-align: center;
-        cursor: pointer;
+.site39_bann_col0_slide2 {
+    margin-top: 94px;
+    background-color: #000;
 
-        span {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 32px;
-            text-align: justify;
-            text-transform: uppercase;
-            color: #fff;
-            z-index: 1;
-        }
+    .slider_staff {
+        padding-top: 80px;
+        padding-bottom: 60px;
 
-        &::before {
-            position: absolute;
-            content: '';
-            border: 1px solid #48D3D8;
-            background-color: #fff;
-            width: 0;
-            height: 32px;
-            left: 0;
-            transition: all .5s;
-            z-index: 0;
-        }
-
-        &:hover {
-            background-color: transparent;
-
-            span {
-                color: #fff;
-            }
-
-            &::before {
-                width: 132px;
-            }
-        }
-    }
-
-    .service_top {
-        display: flex;
-
-        .service_item {
-            background-color: #fff;
-            padding: 32px 25px 40px;
-
-
-            .service_title {
-                h2 {
-                    font-family: Montserrat;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 21px;
-                    line-height: 150.6%;
-                    text-align: center;
-                    text-transform: uppercase;
-                }
-            }
-
-            .service_body {
-                max-height: 320px;
-                overflow-y: scroll;
-                margin: 36px 0 40px;
-
-                .text {
-                    font-family: Montserrat;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 150.5%;
-                    text-align: center;
-                    overflow-y: scroll;
-                    color: #000;
-                }
-            }
-
-            &:nth-child(odd) {
-                background-color: #000;
-
-                .service_title {
-                    h2 {
-                        color: #fff;
-                    }
-                }
-
-                .service_body {
-                    .text {
-                        color: #fff;
-                    }
-                }
-            }
-
-        }
-    }
-
-    .service_bot {
-        margin-top: 115px;
-
-        .header {
+        .slide_title {
             h2 {
                 font-family: Montserrat;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 36px;
                 line-height: 140.1%;
-                text-align: center;
                 text-transform: uppercase;
-                color: #424242;
+                color: #FFFFFF;
+                text-align: center;
             }
         }
 
-        .content {
-            display: flex;
-            width: 100%;
-            margin-top: 104px;
+        .slide {
+            margin-top: 95px;
+            padding-bottom: 154px;
 
-            .content_item {
-                width: calc(100% / 3);
-                display: flex;
-                flex-flow: wrap;
-                justify-content: center;
+            .slick-list {
+                .slick-track {
+                    .slick-slide {
+                        position: relative;
+                        display: flex;
+                        flex-flow: wrap;
+                        padding: 16px;
 
-                .content_text {
-                    width: 100%;
-                    text-align: center;
-                    margin-top: 29px;
+                        img {
+                            width: 100%;
+                        }
 
-                    p {
-                        margin-right: auto;
-                        margin-left: auto;
-                        max-width: 180px;
-                        font-family: Montserrat;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 16px;
-                        line-height: 150.5%;
-                        color: #5C5C5C;
+                        .sub_slide {
+                            .sub_header {
+                                font-family: SVN-Poppins;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 24px;
+                                text-transform: uppercase;
+                                color: #48D3D8;
+                                margin-top: 22px;
+                            }
+
+                            .sub_body {
+                                font-family: SVN-Poppins;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 30px;
+                                line-height: 149.62%;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+
+                            }
+                        }
+
+
+
+
+                        &.slick-active {
+                            top: 50px;
+
+                            &.slick-current {
+                                top: 0;
+                            }
+                        }
                     }
                 }
             }
         }
     }
-
 }
-
-/* end banner */
 
 /* footer */
 @import 'mixin/footer';
