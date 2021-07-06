@@ -58,84 +58,11 @@ main {
 @import 'tuvan/content1';
 /* site39_bann_col0_slide2 */
 @import 'tuvan/content2';
+/* site39_bann_col0_slide3 */
+@import 'tuvan/content3';
+/* site39_form_col12_dkytuvan */
+@import 'mixin/form';
 
-.site39_bann_col0_slide2 {
-    margin-top: 94px;
-    background-color: #000;
-
-    .slider_staff {
-        padding-top: 80px;
-        padding-bottom: 60px;
-
-        .slide_title {
-            h2 {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 36px;
-                line-height: 140.1%;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                text-align: center;
-            }
-        }
-
-        .slide {
-            margin-top: 95px;
-            padding-bottom: 154px;
-
-            .slick-list {
-                .slick-track {
-                    .slick-slide {
-                        position: relative;
-                        display: flex;
-                        flex-flow: wrap;
-                        padding: 16px;
-
-                        img {
-                            width: 100%;
-                        }
-
-                        .sub_slide {
-                            .sub_header {
-                                font-family: SVN-Poppins;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 16px;
-                                line-height: 24px;
-                                text-transform: uppercase;
-                                color: #48D3D8;
-                                margin-top: 22px;
-                            }
-
-                            .sub_body {
-                                font-family: SVN-Poppins;
-                                font-style: normal;
-                                font-weight: 500;
-                                font-size: 30px;
-                                line-height: 149.62%;
-                                text-transform: uppercase;
-                                color: #FFFFFF;
-
-                            }
-                        }
-
-
-
-
-                        &.slick-active {
-                            top: 50px;
-
-                            &.slick-current {
-                                top: 0;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 /* footer */
 @import 'mixin/footer';

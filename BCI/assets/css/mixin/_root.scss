@@ -90,6 +90,13 @@ li {
     background: rgba(151, 151, 151, 0.905);
 }
 
+input {
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+
 
 .container {
     max-width: 1170px;

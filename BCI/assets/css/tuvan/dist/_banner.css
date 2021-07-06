@@ -1,0 +1,41 @@
+.site39_bann_col0_slide {
+  position: relative;
+}
+.site39_bann_col0_slide .banner_img {
+  max-height: 1080px;
+}
+.site39_bann_col0_slide .banner_img img {
+  height: 100%;
+  filter: grayscale(100%);
+}
+.site39_bann_col0_slide .banner_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.site39_bann_col0_slide .banner_content span {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 288px;
+  line-height: 140.1%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: overlay;
+  opacity: 0.3;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+.site39_bann_col0_slide .box_banner {
+  position: absolute;
+  bottom: -117px;
+  right: 445px;
+  background-color: #fff;
+  max-width: 800px;
+  padding: 45px 60px 30px;
+}

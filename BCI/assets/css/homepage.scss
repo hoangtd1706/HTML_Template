@@ -58,4 +58,139 @@ svg {
 /* footer */
 @import 'mixin/footer';
 
+.popup_form {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 100001;
+    background-color: #10101095;
+
+    .popup_content {
+        position: absolute;
+        max-width: 1030px;
+        max-height: 668px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 45px 77px 36px;
+        top: 50%;
+        left: 50%;
+        background-color: #48D3D8;
+        transform: translate(-50%, -50%);
+
+        .icon_decor {
+            position: absolute;
+        }
+
+        .btn_close {
+            border: none;
+            position: absolute;
+            top: 13px;
+            right: 13px;
+            width: 34px;
+            height: 34px;
+            font-size: 40px;
+            line-height: 1px;
+            color: #fff;
+            font-weight: 600;
+            background-color: #FFFFFF20;
+        }
+
+        .popup_header {
+
+            h2 {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 140.1%;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            span {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150.5%;
+                color: #FFFFFF;
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        .popup_body {
+            width: 100%;
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-between;
+
+                span {
+                    width: 100%;
+                    margin: 15px 0;
+
+                    input,
+                    select,
+                    textarea {
+                        width: 100%;
+                        height: 39px;
+                        background-color: transparent;
+                        border: none;
+                        mix-blend-mode: normal;
+                        border-bottom: 0.4px dashed #FFFFFF;
+                        color: #fff;
+
+                        &::placeholder {
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 150.5%;
+                            color: #FFFFFF;
+                            opacity: 0.8;
+                        }
+
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+
+                    textarea {
+                        height: 146px;
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        width: calc(100%/2 - 15px);
+                    }
+                }
+
+                .btn_regis_submit {
+                    width: 204px;
+                    height: 39.84px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    border: none;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-align: justify;
+                    text-transform: uppercase;
+                    color: #71D0D6;
+                    margin-top: 38px;
+                }
+            }
+        }
+
+    }
+}
+
 @import 'mixin/responsive';

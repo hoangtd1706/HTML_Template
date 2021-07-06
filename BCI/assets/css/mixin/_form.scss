@@ -1,0 +1,128 @@
+.site39_form_col12_dkytuvan {
+    position: relative;
+    background-repeat: no-repeat !important;
+    padding-bottom: 114px;
+
+    .icon_decor {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        .decor_left_top {
+            position: absolute;
+        }
+
+        .decor_right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .bacground_decor {
+        position: absolute;
+        height: 100%;
+
+        .decor1 {
+            img {
+                width: 100%;
+            }
+        }
+
+        .decor2 {
+            position: absolute;
+            max-height: 111px;
+            right: -197px;
+            top: 78px;
+        }
+
+    }
+
+    .form_regis {
+        position: relative;
+        padding-top: 79px;
+        padding-bottom: 114px;
+        z-index: 1;
+
+        .form_regis_infomation {
+            .form_title {
+                h2.title {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 140.1%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-bottom: 27px;
+                }
+
+                span.sub_title {
+                    margin-top: 27px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 150.5%;
+                    color: #FFFFFF;
+                }
+            }
+
+            .form_content {
+                margin-top: 40px;
+                display: flex;
+                flex-flow: wrap;
+                max-width: 876px;
+                justify-content: space-between;
+
+                span {
+                    width: 100%;
+                    padding: 15px 0;
+
+                    &.form_50 {
+                        width: 49%;
+                    }
+
+                    input {
+                        height: 40px;
+                        width: 100%;
+                        border: none;
+                        border-bottom: 0.5px dashed #fff;
+                        background-color: transparent;
+                        color: #fff;
+
+                        &::placeholder {
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 150.5%;
+                            color: #FFFFFF;
+                            opacity: 0.8;
+                        }
+
+                    }
+                }
+
+                button.btn_regis_submit {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 25px;
+                    text-align: justify;
+                    text-transform: capitalize;
+                    color: #71D0D6;
+                    width: 172px;
+                    height: 33.68px;
+                    border: none;
+                    background-color: #fff;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,18 @@
 .site39_html_col0_tuvandn {
+    position: relative;
     margin-top: 179px;
+    padding-bottom: 94px;
+
+    .background_decor {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        .icon_decor {
+            position: absolute;
+            bottom: 0;
+        }
+    }
 
     .btn_regis_now {
         position: relative;
@@ -52,11 +65,30 @@
 
     .service_top {
         display: flex;
+        position: relative;
+
+        .icon_decor {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            .decor_left {
+                position: absolute;
+                top: -111px;
+                left: -111px;
+            }
+
+            .decor_right {
+                position: absolute;
+                right: -98px;
+                bottom: 0;
+            }
+        }
 
         .service_item {
             background-color: #fff;
             padding: 32px 25px 40px;
-
+            z-index: 1;
 
             .service_title {
                 h2 {
@@ -71,9 +103,13 @@
             }
 
             .service_body {
-                max-height: 320px;
-                overflow-y: scroll;
+                max-height: 308px;
+                overflow: hidden;
                 margin: 36px 0 40px;
+
+                &:hover {
+                    overflow-y: overlay;
+                }
 
                 .text {
                     font-family: Montserrat;
@@ -87,7 +123,7 @@
                 }
             }
 
-            &:nth-child(odd) {
+            &:nth-child(even) {
                 background-color: #000;
 
                 .service_title {

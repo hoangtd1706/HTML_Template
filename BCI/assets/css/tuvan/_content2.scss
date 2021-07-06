@@ -1,0 +1,99 @@
+.site39_bann_col0_slide2 {
+    background-color: #000;
+
+    .slider_staff {
+        position: relative;
+        padding-top: 80px;
+        padding-bottom: 22px;
+
+        .slide_title {
+            h2 {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 140.1%;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-align: center;
+            }
+        }
+
+        .slide_arrow {
+            position: absolute;
+            width: 100%;
+            height: 80%;
+
+            .next_arrow {
+                position: absolute;
+                right: -31px;
+                top: 50%;
+                cursor: pointer;
+            }
+        }
+
+
+        .slide {
+            margin-top: 95px;
+
+            .slick-list {
+                .slick-track {
+                    height: 500px;
+
+                    .slick-slide {
+                        position: relative;
+                        display: flex;
+                        flex-flow: wrap;
+                        padding: 16px;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        .sub_slide {
+                            position: relative;
+
+
+                            .sub_header {
+                                font-family: SVN-Poppins;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 24px;
+                                text-transform: uppercase;
+                                color: #48D3D8;
+                                margin-top: 22px;
+                            }
+
+                            .sub_body {
+                                font-family: SVN-Poppins;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 30px;
+                                line-height: 149.62%;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+
+                            }
+                        }
+
+
+
+
+                        &.slick-active {
+                            top: 50px;
+
+                            .sub_slide {
+                                top: -36px;
+                            }
+
+                            &.slick-current {
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
