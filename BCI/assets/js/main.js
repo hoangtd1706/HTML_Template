@@ -34,15 +34,32 @@ $(document).ready(function () {
         let document_height = $(document).height();
         (toTop > 300) ? changeSizeMenu(true): changeSizeMenu(false);
     })
-
-    let changeSizeMenu = (event) => {
-        if (event == true) {
-            if ($('.site39_header_col0').hasClass('minimal') == false) {
-                $('.site39_header_col0').addClass('minimal');
-            }
-        } else {
-            $('.site39_header_col0').removeClass('minimal');
-        }
-    }
-
 })
+
+let changeSizeMenu = (event) => {
+    if (event == true) {
+        if ($('.site39_header_col0').hasClass('minimal') == false) {
+            $('.site39_header_col0').addClass('minimal');
+        }
+    } else {
+        $('.site39_header_col0').removeClass('minimal');
+    }
+}
+
+let popup = (event) => {
+    if (event == true) {
+        $('.popup_form').addClass('show');
+    } else {
+        $('.popup_form').removeClass('show');
+    }
+}
+
+
+let btn_popup_close = document.querySelector('.btn_popup_close');
+let overlay_popup_close = document.querySelector('.popup_overlay');
+btn_popup_close.addEventListener('click', function () {
+    popup(false);
+});
+overlay_popup_close.addEventListener('click', function () {
+    popup(false);
+});

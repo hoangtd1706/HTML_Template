@@ -46,9 +46,10 @@ a {
 }
 
 button {
-    &:focus-visible {
+
+    &:focus-visible,
+    &:focus {
         outline: none;
-        border: 1px solid #48D3D8;
     }
 }
 
