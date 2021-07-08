@@ -51,16 +51,11 @@ main {
 }
 
 /* banner site39_bann_col0_slide*/
-@import 'tuvan/banner';
+@import 'tuvanchienluoc/banner';
 /* end banner */
+/* site39_html_col12_chitietdichvu */
+@import 'tuvanchienluoc/chitietdichvu';
 
-/* site39_html_col0_tuvandn */
-@import 'tuvan/content1';
-/* site39_bann_col0_slide2 */
-@import 'tuvan/content2';
-/* site39_bann_col0_slide3 */
-@import 'tuvan/content3';
-/* site39_form_col12_dkytuvan */
 @import 'mixin/form';
 
 
@@ -70,12 +65,6 @@ main {
 
 @import 'mixin/responsive';
 
-@media (max-width:1024px) {
-    .site39_html_col0_tuvandn {
-        margin-top: 40px;
-
-    }
-}
 
 @media (max-width:680px) {
 

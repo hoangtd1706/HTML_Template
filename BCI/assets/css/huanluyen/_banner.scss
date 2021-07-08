@@ -20,19 +20,13 @@
             font-family: Oswald;
             font-style: normal;
             font-weight: normal;
-            /* font-size: 288px; */
-            font-size: 21vw;
+            font-size: calc(15vw - 7px);
             line-height: 140.1%;
             letter-spacing: 0.15em;
             text-transform: uppercase;
             color: #FFFFFF;
             mix-blend-mode: overlay;
-            opacity: 0.3;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            -o-user-select: none;
+            opacity: 0.5;
         }
     }
 

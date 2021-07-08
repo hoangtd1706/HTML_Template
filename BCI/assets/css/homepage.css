@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap");
 @font-face {
   font-family: SVN-Poppins;
   src: url("../../assets/fonts/SVN-Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: SVN-Gotham;
+  src: url("../../assets/fonts/SVN-GothamRegular.otf");
+}
+
+@font-face {
+  font-family: SVN-Gotham-light;
+  src: url("../../assets/fonts/SVN-Gotham Light.otf");
 }
 
 * {
@@ -776,6 +787,7 @@ svg {
   opacity: 0;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  overflow: hidden;
   z-index: -1;
 }
 
@@ -1248,6 +1260,15 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
+  }
+}
+
+@media (max-width: 1600px) {
+  .site39_header_col0 .nav {
+    max-width: 1170px !important;
+  }
+  .site39_header_col0 .nav .menu .menu-top li.menu-link {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=homepage.css.map */

@@ -6,6 +6,7 @@
     background-color: #10101095;
     opacity: 0;
     transition: all .4s ease-in-out;
+    overflow: hidden;
     z-index: -1;
 
     &.show {

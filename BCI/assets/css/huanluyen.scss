@@ -49,17 +49,18 @@ svg {
 main {
     position: relative;
 }
-
 /* banner site39_bann_col0_slide*/
-@import 'tuvan/banner';
+@import 'huanluyen/banner';
 /* end banner */
 
 /* site39_html_col0_tuvandn */
-@import 'tuvan/content1';
+@import 'huanluyen/content1';
 /* site39_bann_col0_slide2 */
-@import 'tuvan/content2';
+@import 'huanluyen/content2';
 /* site39_bann_col0_slide3 */
-@import 'tuvan/content3';
+@import 'huanluyen/content3';
+/* site39_html_col0_hinhanhkhoahoc */
+@import 'huanluyen/content4';
 /* site39_form_col12_dkytuvan */
 @import 'mixin/form';
 

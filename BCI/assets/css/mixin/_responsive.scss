@@ -27,7 +27,6 @@ $cl_dot:#0CB1B1;
 }
 
 
-
 @media (max-width:1366px) {
     .site39_header_col0 {
         .nav {
@@ -292,6 +291,24 @@ $cl_dot:#0CB1B1;
 
             .foot_icon {
                 flex-flow: row;
+            }
+        }
+    }
+}
+
+@media (max-width:1600px) {
+    .site39_header_col0 {
+        .nav {
+            max-width: 1170px !important;
+
+            .menu {
+                .menu-top {
+                    li {
+                        &.menu-link {
+                            font-size: 14px;
+                        }
+                    }
+                }
             }
         }
     }
