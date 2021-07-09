@@ -1,0 +1,229 @@
+.site39_newcat_col12_kienthucmkt {
+    position: relative;
+    padding-top: 100px;
+
+    .cat_title {
+        .title {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 140.1%;
+            text-transform: uppercase;
+            text-align: center;
+            color: #333333;
+        }
+    }
+
+    .cat_body {
+        display: flex;
+        margin-top: 62px;
+
+        .list_cat {
+            width: 260px;
+
+            ul {
+                max-width: 260px;
+                width: 100%;
+                position: relative;
+
+                &.fixed_list {
+                    position: fixed;
+                    top: 120px;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 6px;
+                    height: 100%;
+                    left: -20px;
+                    background: #48D3D8;
+                }
+
+                li {
+                    position: relative;
+                    margin-bottom: 30px;
+
+                    a {
+                        position: relative;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 150.6%;
+                        text-transform: uppercase;
+                        color: #4F4F4F;
+                        flex: none;
+                        order: 1;
+                        flex-grow: 0;
+                        margin: 30px 0px;
+                        transition: all .3s;
+
+                    }
+
+                    &.active {
+                        a {
+                            font-weight: 600;
+                            color: #48D3D8;
+                        }
+                    }
+
+                    &:hover {
+                        a {
+                            color: #48D3D8;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .main_post {
+            max-width: 870px;
+
+            .list_post {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-between;
+
+                .post_item {
+                    max-width: 415px;
+                    width: 50%;
+
+                    .post_thumb {
+                        a {
+                            position: relative;
+                            display: block;
+                            width: 100%;
+                            overflow: hidden;
+
+                            img {
+                                height: 100%;
+                                transition: all .4s ease;
+                            }
+
+                            .text_thumb {
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                background: #414142;
+                                font-family: Montserrat;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 150.36%;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+                                padding: 6px 10px;
+                                opacity: 0.8;
+                                transition: all .4s;
+
+                                &:hover {
+                                    background: #48D3D8;
+                                }
+                            }
+
+
+                        }
+                    }
+
+                    .post_content {
+                        margin-top: 20px;
+
+                        a {
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 21px;
+                            line-height: 150.5%;
+                            color: #333333;
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        margin-top: 60px;
+                    }
+
+                    &:hover {
+                        .post_thumb {
+                            a {
+                                img {
+                                    transform: scale(1.1)
+                                }
+
+                                .text_thumb {
+                                    background: #48D3D8;
+                                }
+                            }
+                        }
+
+                        .post_content {
+                            a {
+                                font-family: Montserrat;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 21px;
+                                line-height: 150.5%;
+                                color: #48D3D8;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pagination-all {
+                position: relative;
+                margin-top: 40px;
+                right: 0;
+
+                .pagination {
+                    float: right;
+
+                    li {
+                        display: flex;
+                        width: 35px;
+                        height: 35px;
+                        background: #FFFFFF;
+                        border: 1px solid #E0E0E0;
+                        box-sizing: border-box;
+                        margin: 0 0 0 9px;
+                        align-items: center;
+
+                        a {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            color: #000;
+                            width: 35px;
+                            height: 35px;
+                            justify-content: center;
+                        }
+
+                        &.active {
+                            background: #48D3D8;
+
+                            a {
+                                color: #fff;
+                            }
+                        }
+
+                        &:hover {
+                            background: #48D3D8;
+
+                            a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
