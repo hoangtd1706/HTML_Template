@@ -716,6 +716,7 @@ main {
 }
 
 .site39_foot_col0_bci .foot_content .foot_item.item_left {
+  position: relative;
   max-width: 700px;
 }
 
@@ -729,13 +730,15 @@ main {
   font-style: normal;
   font-weight: bold;
   font-size: 122px;
-  line-height: 171.5%;
+  line-height: 122px;
   letter-spacing: 0.035em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
 .site39_foot_col0_bci .foot_content .foot_item.item_left p {
+  position: relative;
+  margin-top: 90px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -743,7 +746,6 @@ main {
   line-height: 150.4%;
   text-transform: uppercase;
   color: #5a5a5a;
-  position: relative;
   z-index: 10;
 }
 
@@ -883,6 +885,18 @@ main {
   }
   .site39_foot_col0_bci .foot_content .foot_item.item_right .content p {
     text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .site39_foot_col0_bci .foot_content .foot_item.item_left .animate_text span {
+    font-size: 108px;
+  }
+}
+
+@media (max-width: 425px) {
+  .site39_foot_col0_bci .foot_content .foot_item.item_left .animate_text span {
+    font-size: 58px;
   }
 }
 
