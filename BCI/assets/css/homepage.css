@@ -119,6 +119,8 @@ input:focus-visible {
   width: 100vw;
   height: 100px;
   position: fixed;
+  -webkit-box-shadow: 0px 3px 10px #f1f1f180;
+          box-shadow: 0px 3px 10px #f1f1f180;
   z-index: 10000;
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
@@ -202,7 +204,7 @@ input:focus-visible {
 }
 
 .site39_header_col0 .nav {
-  max-width: 1570px;
+  max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -247,12 +249,12 @@ input:focus-visible {
 }
 
 .site39_header_col0 .nav .menu .menu-top li {
-  padding-left: 40px;
+  padding-left: 20px;
   z-index: 10000;
 }
 
 .site39_header_col0 .nav .menu .menu-top li.menu-link {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 24px;
   position: relative;

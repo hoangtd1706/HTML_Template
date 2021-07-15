@@ -1,0 +1,38 @@
+@import 'mixin/fonts';
+
+$cl_blue_primary : #48D3D8;
+$cl_blue_secondary : rgba(72, 211, 216, 0.3);
+$cl_gray :#424242;
+$cl_light :#F6F7F9;
+$cl_black :#1A1A1A;
+$cl_text_gray_5c: #5C5C5C;
+$cl_text_gray_5a: #5a5a5a;
+$cl_text_gray1: #333333;
+$cl_dot:#0CB1B1;
+
+@import 'mixin/root';
+/* header  site39_header_col0*/
+@import 'mixin/header';
+
+/* end header */
+main {
+    position: relative;
+}
+
+.side39_bann_col0_bando {
+    position: relative;
+    padding-top: 100px;
+    height: 635px;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+    }
+}
+
+/* footer */
+@import 'mixin/footer';
+@import 'mixin/popup';
+
+@import 'mixin/responsive';
