@@ -65,31 +65,6 @@ $cl_dot:#0CB1B1;
                     flex-grow: 0;
                     margin: 15px 0px;
                 }
-
-                .btn_rigister_now {
-                    font-family: Montserrat;
-                    background-color: $cl_blue_primary;
-                    color: #fff;
-                    font-weight: 600;
-                    font-size: 20.2424px;
-                    line-height: 25px;
-                    text-align: justify;
-                    text-transform: uppercase;
-                    border: none;
-                    height: 33px;
-                    cursor: pointer;
-
-                    &::after {
-                        content: '';
-                        background-color: #fff;
-                        border: 1px solid $cl_blue_primary;
-                        width: 0px;
-                    }
-
-                    &:hover::after {
-                        width: 100%;
-                    }
-                }
             }
         }
 

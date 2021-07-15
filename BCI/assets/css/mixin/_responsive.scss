@@ -8,9 +8,6 @@ $cl_text_gray_5a: #5a5a5a;
 $cl_text_gray1: #333333;
 $cl_dot:#0CB1B1;
 
-
-/* end footer */
-
 .close_menu {
     background-color: transparent;
     z-index: -1;
@@ -29,7 +26,7 @@ $cl_dot:#0CB1B1;
 
 @media (max-width:1366px) {
     .site39_header_col0 {
-        .nav {
+        .nav_bci {
             max-width: 1170px;
 
             .header-logo {
@@ -57,15 +54,6 @@ $cl_dot:#0CB1B1;
     }
 }
 
-@media (min-width:1200px) and (max-width:1300px) {
-    .site39_foot_col0_bci {
-        .social {
-            right: 6px;
-            position: fixed;
-        }
-    }
-}
-
 @media (max-width:1200px) {
     .site39_header_col0 {
         height: 80px;
@@ -74,7 +62,7 @@ $cl_dot:#0CB1B1;
             display: block;
         }
 
-        .nav {
+        .nav_bci {
             .header-logo {
                 margin-left: 20px;
                 height: 40px;
@@ -240,65 +228,11 @@ $cl_dot:#0CB1B1;
             margin: 50px 0;
         }
     }
-
-    .site39_foot_col0_bci {
-        height: auto;
-        padding-bottom: 40px;
-        flex-flow: wrap;
-
-        .container {
-            .foot_content {
-                flex-flow: wrap;
-
-                .foot_item {
-                    &.item_left {
-
-                        &::before {
-                            top: -40px;
-                        }
-
-                        p {
-                            padding-top: 25px;
-                            font-size: 24px;
-                        }
-                    }
-
-                    &.item_right {
-                        margin-top: 76px;
-                        width: 100%;
-                        max-width: unset;
-
-                        .foot_logo {
-                            float: left;
-                        }
-
-                        .content {
-                            float: left;
-
-                            p {
-                                text-align: left;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .social {
-            position: relative;
-            width: 100%;
-            padding: 15px;
-
-            .foot_icon {
-                flex-flow: row;
-            }
-        }
-    }
 }
 
 @media (max-width:1600px) {
     .site39_header_col0 {
-        .nav {
+        .nav_bci {
             max-width: 1170px !important;
 
             .menu {
