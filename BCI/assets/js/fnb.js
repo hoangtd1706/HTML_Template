@@ -6,6 +6,12 @@ $(document).ready(function () {
         "nextArrow": $(".btn_next"),
         "fade": true,
         "autoplay": false,
+        "responsive": [{
+            breakpoint: 1024,
+            settings: {
+                dots: true,
+            }
+        }]
     })
 
 

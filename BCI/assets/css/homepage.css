@@ -114,6 +114,45 @@ input:focus-visible {
   margin-right: auto;
 }
 
+.Line,
+.Line__mask {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.Line {
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+  height: 0;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.Line .Line__svg svg {
+  stroke-width: 1px;
+  fill-rule: evenodd;
+  fill: none;
+  stroke: #48D3D8;
+}
+
+@media (max-width: 1000px) {
+  /* width */
+  ::-webkit-scrollbar {
+    position: absolute;
+    width: 4px;
+    background-color: transparent;
+  }
+}
+
 .btn_bci {
   max-width: 202px;
   max-height: 40px;
@@ -406,36 +445,6 @@ input:focus-visible {
 }
 
 /* end header */
-.Line,
-.Line__mask {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-svg {
-  width: 100%;
-  height: 100%;
-}
-
-.Line {
-  position: fixed;
-  overflow: hidden;
-  z-index: 1;
-  pointer-events: none;
-  height: 0;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
-}
-
-.Line .Line__svg svg {
-  stroke-width: 1px;
-  fill-rule: evenodd;
-  fill: none;
-  stroke: #41f3b7;
-}
-
 /* banner site39_bann_col0_slide*/
 .site39_bann_col0_slide {
   position: relative;

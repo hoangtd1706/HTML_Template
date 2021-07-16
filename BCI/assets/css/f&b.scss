@@ -15,36 +15,7 @@ $cl_dot:#0CB1B1;
 @import 'mixin/header';
 /* end header */
 
-.Line,
-.Line__mask {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
-svg {
-    width: 100%;
-    height: 100%;
-}
-
-.Line {
-    position: fixed;
-    overflow: hidden;
-    z-index: 1;
-    pointer-events: none;
-    height: 0;
-    transition: all .8s ease;
-
-    .Line__svg {
-        svg {
-            stroke-width: 1px;
-            fill-rule: evenodd;
-            fill: none;
-            stroke: #41f3b7;
-        }
-    }
-}
 
 main {
     position: relative;
@@ -97,10 +68,18 @@ main {
             position: absolute;
             width: 100%;
             top: 50%;
+            left: 0px;
             z-index: 1200;
 
             .btn_arrow {
                 position: absolute;
+                width: 40px;
+                height: 40px;
+                background: #ffffff;
+                opacity: .7;
+                transform: rotate(135deg);
+                border: 1px solid transparent;
+                transition: all .3s ease;
                 cursor: pointer;
 
                 &.hidden {
@@ -111,10 +90,45 @@ main {
 
                 &.btn_prev {
                     left: -84px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #48D3D8;
+
+                    img {
+                        filter: brightness(0) invert(1);
+                        transform: rotate(-135deg);
+                    }
+
+                    &:hover {
+                        background: transparent;
+                        border-color: #48D3D8;
+
+                        img {
+                            filter: none;
+                        }
+                    }
                 }
 
                 &.btn_next {
                     right: -56px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        transform: rotate(-135deg);
+                    }
+
+                    &:hover {
+                        background: transparent;
+                        border-color: #fff;
+
+                        img {
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+
                 }
 
 
@@ -227,8 +241,9 @@ main {
 }
 
 @media (max-width:1200px) {
-
     .site39_html_col0_fnb {
+        padding-top: 90px;
+
         .content_fnb {
             .decor1 {
                 .circle {
@@ -310,6 +325,39 @@ main {
 @media (max-width:768px) {
     .site39_html_col0_fnb {
         .content_fnb {
+            .arrow {
+                bottom: -18px;
+                top: auto;
+                z-index: 1215;
+
+                .btn_arrow {
+                    width: 30px;
+                    height: 30px;
+
+                    &.btn_prev {
+                        left: 15px;
+                    }
+
+                    &.btn_next {
+                        right: 15px;
+                        background: #48D3D8;
+
+                        img {
+                            filter: brightness(0) invert(1);
+                        }
+
+                        &:hover {
+                            background: transparent;
+                            border-color: #48D3D8;
+
+                            img {
+                                filter: none;
+                            }
+                        }
+                    }
+                }
+            }
+
             .slide {
                 .slick-list {
                     .slide_item {
@@ -322,21 +370,19 @@ main {
 
                         .content_left {
                             position: relative;
-                            top: -280px;
-                            margin: 30px;
-                            padding: 20px;
-                            background-color: #fff;
+                            top: 0;
                             order: 2;
                             z-index: 10001;
 
                             .content_box {
                                 display: flex;
                                 flex-flow: row wrap;
-                                justify-content: space-between;
+                                justify-content: space-around;
 
                                 .box_item {
                                     width: calc(50% - 10px);
-                                    margin-top: 10px;
+                                    margin-top: 20px;
+
                                     .box_header {
                                         .text {
                                             text-align: center;
@@ -352,6 +398,10 @@ main {
                         }
                     }
                 }
+
+                .slick-dots {
+                    bottom: -50px;
+                }
             }
         }
     }
@@ -363,14 +413,13 @@ main {
             .slide {
                 .slick-list {
                     .slide_item {
-                        display: gr;
                         .content_left {
-                            top: -280px;
-                            margin: 15px;
-                            padding: 15px;
+                            margin: 10px 0 0 0;
+                            padding: 0;
 
                             .title {
                                 font-size: 36px;
+                                text-align: center;
                             }
 
                             .description {
@@ -378,9 +427,28 @@ main {
                             }
 
                             .content_box {
+                                max-height: 460px;
+                                overflow-y: hidden;
+
+                                &:hover {
+                                    overflow-y: overlay;
+                                }
+
                                 .box_item {
                                     width: 100%;
                                     margin-top: 10px;
+
+                                    .box_body {
+                                        margin-left: 0;
+
+                                        li {
+                                            text-align: center;
+
+                                            &::before {
+                                                display: none;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

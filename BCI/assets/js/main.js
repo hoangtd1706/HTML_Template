@@ -33,7 +33,16 @@ $(document).ready(function () {
         let toTop = $(this).scrollTop();
         let document_height = $(document).height();
         (toTop > 300) ? changeSizeMenu(true): changeSizeMenu(false);
+        if (toTop < 100) {
+            $('.Line').css('height', '0px');
+        } else if ((toTop > 100) && ((page_height - toTop - 1000) > 10)) {
+            $('.Line').css('height', '505px');
+            $('.Line__svg').css('transform', 'matrix(1,0,0,1,0,' + (-717 - toTop))
+        } else {
+            $('.Line').css('height', '100vh');
+        }
     })
+
 })
 
 let changeSizeMenu = (event) => {

@@ -20,8 +20,11 @@ let list_menu = {
         "title": "Liên hệ",
     },
 };
+var view_box = '0 0 1064 4569';
+var line_path = 'M249,0,979,862,0,1556l1038,793L21,3202l1043,608L249,4569';
 
 $(document).ready(function () {
+    renderLine();
     renderMenu();
 })
 
@@ -34,6 +37,17 @@ let renderMenu = () => {
     var close_menu = '<div class="close_menu"></div>';
     nav_bci += logo + menu + '</div>';
     $('header.site39_header_col0').append(head_bg, btn_menu, close_menu, nav_bci);
+}
+
+let renderLine = () => {
+    var line = '<div class="Line__svg" style="transform: matrix(1, 0, 0, 1, 0, -790);">';
+    for (var i = 1; i < 21; i++) {
+        line += '<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="' + view_box + '">' +
+            '<path d="' + line_path + '"></path>' +
+            '</svg></div>';
+    }
+    line += '</div>'
+    $('#Line').append(line);
 }
 
 let getMenu = () => {
