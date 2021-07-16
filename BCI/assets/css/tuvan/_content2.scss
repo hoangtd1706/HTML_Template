@@ -23,14 +23,34 @@
         .slide_arrow {
             position: absolute;
             width: 100%;
-            height: 80%;
+            top: 50%;
+            left: 0;
 
-            .next_arrow {
+            .slide_btn {
                 position: absolute;
-                right: -31px;
-                top: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                background: #48D3D8;
+                transform: rotate(135deg);
                 cursor: pointer;
+
+                img {
+                    transform: rotate(-135deg);
+                    filter: brightness(0) invert(1);
+                }
+
+                &.prev_arrow {
+                    left: -40px;
+                }
+
+                &.next_arrow {
+                    right: -40px;
+                }
             }
+
         }
 
 
@@ -44,11 +64,22 @@
                     .slick-slide {
                         position: relative;
                         display: flex;
-                        flex-flow: wrap;
-                        padding: 16px;
+                        flex-flow: column;
 
-                        img {
+                        &:nth-child(even) {
+                            margin-right: 16px;
+                        }
+
+                        &:nth-child(odd) {
+                            margin-left: 16px;
+                        }
+
+                        .sub_img {
                             width: 100%;
+
+                            img {
+                                width: 100%;
+                            }
                         }
 
                         .sub_slide {
@@ -78,20 +109,6 @@
                             }
                         }
 
-
-
-
-                        &.slick-active {
-                            top: 50px;
-
-                            .sub_slide {
-                                top: -36px;
-                            }
-
-                            &.slick-current {
-                                top: 0;
-                            }
-                        }
                     }
                 }
             }
