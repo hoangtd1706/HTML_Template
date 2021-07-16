@@ -5,7 +5,7 @@ $(document).ready(function () {
         "prevArrow": $(".btn_prev"),
         "nextArrow": $(".btn_next"),
         "fade": true,
-        "autoplay": true,
+        "autoplay": false,
     })
 
 

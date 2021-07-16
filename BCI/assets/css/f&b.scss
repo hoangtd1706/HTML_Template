@@ -54,9 +54,10 @@ main {
 
 .site39_html_col0_fnb {
     position: relative;
-    margin-top: 260px;
+    padding-top: 260px;
     padding-bottom: 106px;
     z-index: 1000;
+    overflow: hidden;
 
     .decor {
         position: absolute;
@@ -73,7 +74,6 @@ main {
 
     .content_fnb {
         position: relative;
-
 
         .decor1 {
             position: absolute;
@@ -203,6 +203,207 @@ main {
                             img {
                                 width: 100%;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1400px) {
+    .site39_html_col0_fnb {
+        .content_fnb {
+            .decor1 {
+                .circle {
+                    height: 568px;
+                    width: 568px;
+                    top: -83px;
+                    right: -160px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+
+    .site39_html_col0_fnb {
+        .content_fnb {
+            .decor1 {
+                .circle {
+                    height: 400px;
+                    width: 400px;
+                    top: -90px;
+                    right: -40px;
+                }
+            }
+
+            .slide {
+                .slick-list {
+                    .slide_item {
+                        .content_left {
+                            .title {
+                                font-size: 60px;
+                            }
+
+                            .description {
+                                font-size: 15px
+                            }
+
+                            .content_box {
+                                .box_item {
+                                    .box_body {
+                                        li {
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .site39_html_col0_fnb {
+        padding-top: 80px;
+
+        .content_fnb {
+            .decor1 {
+                .circle {
+                    top: -70px;
+                    right: -60px;
+                }
+            }
+
+            .slide {
+                .slick-list {
+                    .slide_item {
+                        .content_left {
+                            .content_box {
+                                .box_item {
+                                    .box_header {
+                                        .text {
+                                            font-size: 14px;
+                                        }
+                                    }
+
+                                    .box_body {
+                                        li {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .site39_html_col0_fnb {
+        .content_fnb {
+            .slide {
+                .slick-list {
+                    .slide_item {
+                        display: flex;
+
+                        .content_left,
+                        .content_right {
+                            width: 100%;
+                        }
+
+                        .content_left {
+                            position: relative;
+                            top: -280px;
+                            margin: 30px;
+                            padding: 20px;
+                            background-color: #fff;
+                            order: 2;
+                            z-index: 10001;
+
+                            .content_box {
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: space-between;
+
+                                .box_item {
+                                    width: calc(50% - 10px);
+                                    margin-top: 10px;
+                                    .box_header {
+                                        .text {
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .content_right {
+                            position: relative;
+                            z-index: 10000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .site39_html_col0_fnb {
+        .content_fnb {
+            .slide {
+                .slick-list {
+                    .slide_item {
+                        display: gr;
+                        .content_left {
+                            top: -280px;
+                            margin: 15px;
+                            padding: 15px;
+
+                            .title {
+                                font-size: 36px;
+                            }
+
+                            .description {
+                                font-size: 14px;
+                            }
+
+                            .content_box {
+                                .box_item {
+                                    width: 100%;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .site39_html_col0_fnb {
+        .content_fnb {
+            .slide {
+                .slick-list {
+                    .slide_item {
+                        display: flex;
+
+                        .content_left {
+                            top: 0;
+                            margin: 0;
+                            padding: 0;
+                            background: transparent;
                         }
                     }
                 }
