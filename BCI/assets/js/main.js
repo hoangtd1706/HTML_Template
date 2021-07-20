@@ -43,6 +43,43 @@ $(document).ready(function () {
         }
     })
 
+    /* slide đội ngũ nhân sự */
+    let staff_slide = $('#slide_staff').slick({
+        "slidesToShow": 2,
+        "slidesToScroll": 2,
+        "prevArrow": $("#btn_prev_2"),
+        "nextArrow": $("#btn_next_2"),
+        "responsive": [{
+            "breakpoint": 1200,
+            "settings": {
+                "slidesToShow": 2,
+                "slidesToScroll": 2
+            }
+        }, {
+            "breakpoint": 600,
+            "settings": {
+                "slidesToShow": 1,
+                "slidesToScroll": 1
+            }
+        }]
+    });
+    $('#slide_staff').on('afterChange', function (event, slick, currentSlide) {
+        if (currentSlide > 0) {
+            $('#btn_prev_2').removeClass('hidden');
+        } else {
+            $('#btn_prev_2').addClass('hidden');
+        }
+
+        if (currentSlide === 0) {
+            $('#btn_next_2').removeClass('hidden');
+        } else {
+            $('#btn_next_2').addClass('hidden');
+        }
+    })
+
+    /* slide khách hàng */
+    let slide4 = $('#slide_customer').slick();
+
 })
 
 let changeSizeMenu = (event) => {

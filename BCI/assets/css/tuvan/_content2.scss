@@ -26,35 +26,30 @@
             top: 50%;
             left: 0;
 
-            .slide_btn {
+            .btn_arrow {
                 position: absolute;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 40px;
-                width: 40px;
-                background: #48D3D8;
-                transform: rotate(135deg);
+                top: 50%;
                 cursor: pointer;
 
-                img {
-                    transform: rotate(-135deg);
-                    filter: brightness(0) invert(1);
-                }
-
                 &.prev_arrow {
-                    left: -40px;
+                    left: -50px;
                 }
 
                 &.next_arrow {
-                    right: -40px;
+                    right: -50px;
+                }
+
+                &.hidden {
+                    opacity: 0;
+                    pointer-events: none;
+    
                 }
             }
 
         }
 
 
-        .slide {
+        .slide_2 {
             margin-top: 95px;
 
             .slick-list {
@@ -64,27 +59,16 @@
                     .slick-slide {
                         position: relative;
                         display: flex;
-                        flex-flow: column;
+                        flex-flow: wrap;
+                        padding: 16px;
 
-                        &:nth-child(even) {
-                            margin-right: 16px;
-                        }
-
-                        &:nth-child(odd) {
-                            margin-left: 16px;
-                        }
-
-                        .sub_img {
+                        img {
                             width: 100%;
-
-                            img {
-                                width: 100%;
-                            }
                         }
 
                         .sub_slide {
                             position: relative;
-
+                            top: -36px;
 
                             .sub_header {
                                 font-family: SVN-Poppins;
@@ -109,6 +93,9 @@
                             }
                         }
 
+                        &:nth-child(even) {
+                            top: 50px;
+                        }
                     }
                 }
             }

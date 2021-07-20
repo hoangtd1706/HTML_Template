@@ -39,7 +39,7 @@ $cl_text_primary: #fff;
             max-height: 40px;
             font-size: 20px;
             font-weight: 600;
-            line-height: 25px;
+            line-height: 20px;
         }
 
         &_md {
@@ -66,11 +66,25 @@ $cl_text_primary: #fff;
         color: $cl_text_primary;
     }
 
+    &.btn_light {
+        height: 100%;
+        width: 100%;
+        background: $cl_text_primary;
+        color: $cl_primary;
+    }
+
+
     &:hover {
         &.btn_primary {
             color: $cl_primary;
-            background: $cl_text_primary;
+            background: transparent;
             border: 1px solid $cl_primary;
+        }
+
+        &.btn_light {
+            color: $cl_text_primary;
+            background: transparent;
+            border: 1px solid $cl_text_primary;
         }
     }
 }

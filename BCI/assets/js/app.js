@@ -12,7 +12,7 @@ let list_menu = {
         "title": "kinh doanh dịch vụ f&b"
     },
     4: {
-        "link": "tintuc",
+        "link": "tintucsukien",
         "title": "Tin tức sự kiện",
     },
     5: {
@@ -52,10 +52,12 @@ let renderLine = () => {
 
 let getMenu = () => {
     var menu = '<div class="menu" id="menu_top"><ul class="menu-top">';
+    var btn_search = '<li><button class="btn-search" type="button"><img src="assets/img/icon/icon-search.png" alt="search"></button></li>';
+
     $.each(list_menu, function (index, value) {
         menu += '<li class="menu-link"><a href="' + value.link + '.html">' + value.title + '</a></li>'
     })
-    menu += '</ul></div>';
+    menu += btn_search + '</ul></div>';
 
     return menu;
 }

@@ -23,6 +23,7 @@
 
 html {
   width: 100vw;
+  overflow-y: overlay;
 }
 
 body {
@@ -194,7 +195,7 @@ svg {
   max-height: 40px;
   font-size: 20px;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 20px;
 }
 
 .btn_bci.btn_md {
@@ -220,10 +221,23 @@ svg {
   color: #fff;
 }
 
+.btn_bci.btn_light {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  color: #48D3D8;
+}
+
 .btn_bci:hover.btn_primary {
   color: #48D3D8;
-  background: #fff;
+  background: transparent;
   border: 1px solid #48D3D8;
+}
+
+.btn_bci:hover.btn_light {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
 }
 
 @media (max-width: 1400px) {

@@ -11,6 +11,7 @@ $cl_text_gray1: #333333;
 $cl_dot:#0CB1B1;
 
 @import 'mixin/root';
+@import 'mixin/button';
 /* header  site39_header_col0*/
 @import 'mixin/header';
 /* end header */
@@ -19,16 +20,17 @@ $cl_dot:#0CB1B1;
 main {
     position: relative;
 }
+
 /* banner site39_bann_col0_slide*/
 @import 'huanluyen/banner';
 /* end banner */
 
-/* site39_html_col0_tuvandn */
+/* site39_html_col0_huanluyendn */
 @import 'huanluyen/content1';
 /* site39_bann_col0_slide2 */
-@import 'huanluyen/content2';
+@import 'mixin/staff';
 /* site39_bann_col0_slide3 */
-@import 'huanluyen/content3';
+@import 'mixin/customer';
 /* site39_html_col0_hinhanhkhoahoc */
 @import 'huanluyen/content4';
 /* site39_form_col12_dkytuvan */
