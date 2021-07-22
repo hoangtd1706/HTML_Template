@@ -24,14 +24,16 @@ var view_box = '0 0 1064 4569';
 var line_path = 'M249,0,979,862,0,1556l1038,793L21,3202l1043,608L249,4569';
 
 $(document).ready(function () {
+    let string = window.location.href;
+    let active_link = string.substring(string.indexOf('BCI/') + 4, string.length - 5);
     renderLine();
-    renderMenu();
+    renderMenu(active_link);
 })
 
-let renderMenu = () => {
+let renderMenu = (active_link) => {
     var nav_bci = '<div class="container nav_bci">';
     var logo = '<div class="header-logo"><a href="home.html"><img src="assets/img/bci-header-logo.png" alt="logo"></a></div>';
-    var menu = getMenu();
+    var menu = getMenu(active_link);
     var head_bg = '<div class="head_bg"></div>';
     var btn_menu = '<div class="btn_menu"><span class="line"></span></div>';
     var close_menu = '<div class="close_menu"></div>';
@@ -50,12 +52,11 @@ let renderLine = () => {
     $('#Line').append(line);
 }
 
-let getMenu = () => {
+let getMenu = (active_link) => {
     var menu = '<div class="menu" id="menu_top"><ul class="menu-top">';
     var btn_search = '<li><button class="btn-search" type="button"><img src="assets/img/icon/icon-search.png" alt="search"></button></li>';
-
     $.each(list_menu, function (index, value) {
-        menu += '<li class="menu-link"><a href="' + value.link + '.html">' + value.title + '</a></li>'
+        menu += '<li class="menu-link ' + (active_link === value.link ? 'active' : '') + '"><a href="' + value.link + '.html">' + value.title + '</a></li>'
     })
     menu += btn_search + '</ul></div>';
 

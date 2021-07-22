@@ -154,6 +154,10 @@ svg {
   }
 }
 
+canvas.CanvasDots {
+  position: absolute;
+}
+
 .btn_bci {
   max-width: 202px;
   max-height: 40px;
@@ -397,13 +401,14 @@ svg {
 .site39_header_col0 .nav_bci .menu .menu-top li.menu-link ::after {
   content: '';
   position: absolute;
-  background-color: #1A1A1A;
+  background-color: #414141;
   top: 25px;
   left: 20px;
   width: 0px;
   height: 1px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  opacity: .6;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .site39_header_col0 .nav_bci .menu .menu-top li.menu-link :hover {
@@ -412,6 +417,10 @@ svg {
 }
 
 .site39_header_col0 .nav_bci .menu .menu-top li.menu-link :hover::after {
+  width: calc(100% - 20px);
+}
+
+.site39_header_col0 .nav_bci .menu .menu-top li.menu-link.active a::after {
   width: calc(100% - 20px);
 }
 
@@ -786,6 +795,30 @@ main {
   z-index: 1000;
 }
 
+.site39_html_col0_tuvandn .service_bot .header {
+  position: relative;
+}
+
+.site39_html_col0_tuvandn .service_bot .header .sub_title {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.site39_html_col0_tuvandn .service_bot .header .sub_title span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 140.1%;
+  text-transform: uppercase;
+  color: rgba(66, 66, 66, 0.08);
+}
+
 .site39_html_col0_tuvandn .service_bot .header h2 {
   font-family: Montserrat;
   font-style: normal;
@@ -855,7 +888,32 @@ main {
   padding-bottom: 22px;
 }
 
-.site39_bann_col0_staff .slider_staff .slide_title h2 {
+.site39_bann_col0_staff .slider_staff .slide_title {
+  position: relative;
+}
+
+.site39_bann_col0_staff .slider_staff .slide_title .sub_title {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.site39_bann_col0_staff .slider_staff .slide_title .sub_title span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 140.1%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.05;
+}
+
+.site39_bann_col0_staff .slider_staff .slide_title .title {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -948,6 +1006,30 @@ main {
 .site39_bann_col0_customer {
   padding-top: 147px;
   padding-bottom: 135px;
+}
+
+.site39_bann_col0_customer .slide_title {
+  position: relative;
+}
+
+.site39_bann_col0_customer .slide_title .sub_title {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.site39_bann_col0_customer .slide_title .sub_title span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 140.1%;
+  text-transform: uppercase;
+  color: rgba(66, 66, 66, 0.08);
 }
 
 .site39_bann_col0_customer .slide_title h2 {

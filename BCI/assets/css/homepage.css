@@ -154,6 +154,10 @@ svg {
   }
 }
 
+canvas.CanvasDots {
+  position: absolute;
+}
+
 .btn_bci {
   max-width: 202px;
   max-height: 40px;
@@ -397,13 +401,14 @@ svg {
 .site39_header_col0 .nav_bci .menu .menu-top li.menu-link ::after {
   content: '';
   position: absolute;
-  background-color: #1A1A1A;
+  background-color: #414141;
   top: 25px;
   left: 20px;
   width: 0px;
   height: 1px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  opacity: .6;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .site39_header_col0 .nav_bci .menu .menu-top li.menu-link :hover {
@@ -412,6 +417,10 @@ svg {
 }
 
 .site39_header_col0 .nav_bci .menu .menu-top li.menu-link :hover::after {
+  width: calc(100% - 20px);
+}
+
+.site39_header_col0 .nav_bci .menu .menu-top li.menu-link.active a::after {
   width: calc(100% - 20px);
 }
 
