@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    let string = window.location.href;
+    let active_link = string.substring(string.indexOf('BCI/') + 4, string.length - 5);
+    if (active_link == '/BCI/') {
+        location.href = 'home.html';
+    }
 
     $('.btn_menu').on('click', function () {
         $(this).toggleClass('active');
@@ -112,7 +117,9 @@ overlay_popup_close.addEventListener('click', function () {
 });
 
 
-window.SmoothScrollOptions = { animationTime: 1000 }
+window.SmoothScrollOptions = {
+    animationTime: 1000
+}
 
 /* Tạo background dots */
 

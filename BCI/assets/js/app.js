@@ -61,9 +61,11 @@ let list_menu = {
 var view_box = '0 0 1064 4569';
 var line_path = 'M249,0,979,862,0,1556l1038,793L21,3202l1043,608L249,4569';
 
+let string = window.location.href;
+const active_link = string.substring(string.indexOf('BCI/') + 4, string.length - 5);
+
+
 $(document).ready(function () {
-    let string = window.location.href;
-    let active_link = string.substring(string.indexOf('BCI/') + 4, string.length - 5);
     renderLine();
     renderMenu(active_link);
 })
