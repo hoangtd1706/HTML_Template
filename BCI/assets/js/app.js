@@ -2,14 +2,52 @@ let list_menu = {
     1: {
         "link": "tuvan",
         "title": "Tư vấn doanh nghiệp",
+        "sub": {
+            1: {
+                "link": "",
+                "title": "Tư vấn chiến lược kinh doanh"
+            },
+            2: {
+                "link": "",
+                "title": "Tư vấn chiến lược marketing"
+            },
+            3: {
+                "link": "",
+                "title": "Tư vấn chiến lược khách hàng"
+            },
+            4: {
+                "link": "",
+                "title": "Tư vấn thuê, kiểm toán, kế toán"
+            }
+        }
     },
     2: {
         "link": "huanluyen",
         "title": "Đào tạo marketing trực tuyến",
+        "sub": {
+            1: {
+                "link": "huanluyen",
+                "title": "Huấn luyện doanh nghiệp",
+            },
+            2: {
+                "link": "kien-thuc-maketing",
+                "title": "Kiến thức marketing",
+            }
+        }
     },
     3: {
         "link": "fnb",
-        "title": "kinh doanh dịch vụ f&b"
+        "title": "kinh doanh dịch vụ f&b",
+        "sub": {
+            1: {
+                "link": "gong-cha",
+                "title": "Gong cha",
+            },
+            2: {
+                "link": "aunti-annes",
+                "title": "Auntie Anne's",
+            }
+        }
     },
     4: {
         "link": "tintucsukien",
@@ -56,7 +94,16 @@ let getMenu = (active_link) => {
     var menu = '<div class="menu" id="menu_top"><ul class="menu-top">';
     var btn_search = '<li><button class="btn-search" type="button"><img src="assets/img/icon/icon-search.png" alt="search"></button></li>';
     $.each(list_menu, function (index, value) {
-        menu += '<li class="menu-link ' + (active_link === value.link ? 'active' : '') + '"><a href="' + value.link + '.html">' + value.title + '</a></li>'
+        menu += '<li class="menu-link ' + (active_link === value.link ? 'active' : '') + '"><a href="' + value.link + '.html">' + value.title + '</a>';
+        if (value.hasOwnProperty('sub')) {
+            let submenu = '<div class="sub_menu"><ul>';
+            $.each(value.sub, function (_in, _va) {
+                submenu += '<li class="sub_link"><a href="' + _va.link + '.html">' + _va.title + '</a></li>';
+            })
+            submenu += '</ul></div>';
+            menu += submenu;
+        }
+        menu += '</li>';
     })
     menu += btn_search + '</ul></div>';
 

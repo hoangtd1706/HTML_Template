@@ -111,10 +111,16 @@ overlay_popup_close.addEventListener('click', function () {
     popup(false);
 });
 
+
+window.SmoothScrollOptions = { animationTime: 1000 }
+
 /* Tạo background dots */
-const width = 1920;
-const height = 1280;
-count = 90;
+
+let height = $('.site39_bann_col0_staff').height();
+let width = $('.site39_bann_col0_staff').width();
+/* const width = 1920;
+const height = 1280; */
+count = 50;
 const rowsize = 45;
 dotsize = 1;
 dotmin = 0.4;

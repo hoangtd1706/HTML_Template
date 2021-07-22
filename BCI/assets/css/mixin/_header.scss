@@ -117,8 +117,12 @@ $cl_dot:#0CB1B1;
                 align-items: center;
 
                 li {
-                    padding-left: 20px;
+                    padding: 0 10px;
                     z-index: 10000;
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
 
                     &.menu-link {
                         font-size: 14px;
@@ -130,33 +134,90 @@ $cl_dot:#0CB1B1;
                             text-transform: uppercase;
                         }
 
-                        ::after {
+                        &::before {
                             content: '';
                             position: absolute;
                             background-color: $cl_black_secondary;
                             top: 25px;
-                            left: 20px;
+                            left: 10px;
                             width: 0px;
                             height: 1px;
                             opacity: .6;
                             transition: all .5s ease;
                         }
 
-                        :hover {
+                        &:hover {
                             text-decoration: none;
                             color: $cl_black;
                         }
 
-                        :hover::after {
+                        &:hover::before {
                             width: calc(100% - 20px);
                         }
 
                         &.active {
-                            a {
-                                &::after {
-                                    width: calc(100% - 20px);
+                            &::before {
+                                width: calc(100% - 20px);
+                            }
+
+                            &:hover {
+                                &::before {
+                                    width: 0;
                                 }
                             }
+                        }
+                    }
+
+                    .sub_menu {
+                        visibility: hidden;
+                        position: absolute;
+                        left: 0px;
+                        width: 100%;
+                        height: 0;
+                        padding: 0 10px;
+                        background: #fff;
+                        opacity: 0;
+                        transition: all .8s ease;
+
+                        ul {
+                            .sub_link {
+                                position: relative;
+                                padding: 10px 0 0 0;
+
+                                &:last-child {
+                                    padding-bottom: 10px;
+                                }
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    background-color: $cl_black_secondary;
+                                    top: 32px;
+                                    left: 0;
+                                    width: 0;
+                                    height: 1px;
+                                    opacity: .6;
+                                    transition: all .5s ease;
+                                }
+
+                                &:hover {
+                                    text-decoration: none;
+                                    color: $cl_black;
+                                }
+
+                                &:hover::before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                    }
+
+                    &.menu-link:hover {
+                        .sub_menu {
+                            visibility: visible;
+                            height: auto;
+                            opacity: 1;
                         }
                     }
 
@@ -165,6 +226,7 @@ $cl_dot:#0CB1B1;
                         background-color: transparent;
                         z-index: 10000;
                     }
+
                 }
             }
         }

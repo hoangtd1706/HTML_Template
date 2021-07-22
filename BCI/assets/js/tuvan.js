@@ -39,4 +39,6 @@ $(document).ready(function () {
             }
         }]
     });
+
+    $('.btn_regis_now').attr('href', 'tu-van-chien-luoc.html');
 });
