@@ -159,6 +159,118 @@ canvas.CanvasDots {
 }
 
 /* header  site39_header_col0*/
+.btn_bci {
+  max-width: 202px;
+  max-height: 40px;
+  height: 100%;
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150.19%;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn_bci.btn_block {
+  width: 100%;
+  height: 100%;
+}
+
+.btn_bci.btn_lg {
+  max-width: 202px;
+  max-height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.btn_bci.btn_md {
+  max-width: 167px;
+  max-height: 33px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.btn_bci.btn_sm {
+  max-width: 132px;
+  max-height: 26px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.btn_bci.btn_primary {
+  height: 100%;
+  width: 100%;
+  background: #48D3D8;
+  color: #fff;
+}
+
+.btn_bci.btn_light {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  color: #48D3D8;
+}
+
+.btn_bci:hover.btn_primary {
+  color: #48D3D8;
+  background: transparent;
+  border: 1px solid #48D3D8;
+}
+
+.btn_bci:hover.btn_light {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.btn.test {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background: #3dec9d;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: color .5s, background .5s;
+  transition: color .5s, background .5s;
+  border: 1px solid #3dec9d;
+  letter-spacing: .05em;
+  cursor: pointer;
+  padding: 0 15px;
+  line-height: 1.3em;
+}
+
+@media (max-width: 1400px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+
 .site39_header_col0 {
   width: 100vw;
   height: 100px;
@@ -844,6 +956,133 @@ main {
 }
 
 .site39_bann_col0_customer .slide_customer .slick-dots li.slick-active button::before {
+  background-color: #48D3D8;
+  border-color: #48D3D8;
+}
+
+/* site39_html_col12_dichvutuvankhac */
+.site39_html_col12_dichvutuvankhac {
+  position: relative;
+}
+
+.site39_html_col12_dichvutuvankhac .container {
+  position: relative;
+}
+
+.site39_html_col12_dichvutuvankhac .container .slide_title {
+  position: relative;
+}
+
+.site39_html_col12_dichvutuvankhac .container .slide_title .sub_title {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.site39_html_col12_dichvutuvankhac .container .slide_title .sub_title span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 140.1%;
+  text-transform: uppercase;
+  color: rgba(66, 66, 66, 0.08);
+}
+
+.site39_html_col12_dichvutuvankhac .container .slide_title .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140.1%;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+
+.site39_html_col12_dichvutuvankhac .container .slide_arrow {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+}
+
+.site39_html_col12_dichvutuvankhac .container .slide_arrow .btn_arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.site39_html_col12_dichvutuvankhac .container .slide_arrow .btn_arrow.prev_arrow {
+  left: -50px;
+}
+
+.site39_html_col12_dichvutuvankhac .container .slide_arrow .btn_arrow.next_arrow {
+  right: -50px;
+}
+
+.site39_html_col12_dichvutuvankhac .container .other_service {
+  margin-top: 57px;
+}
+
+.site39_html_col12_dichvutuvankhac .container .other_service .slick-list .slick-track .service_item {
+  padding: 30px;
+}
+
+.site39_html_col12_dichvutuvankhac .container .other_service .slick-list .slick-track .service_item .header .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150.6%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.site39_html_col12_dichvutuvankhac .container .other_service .slick-list .slick-track .service_item .body {
+  margin-top: 32px;
+}
+
+.site39_html_col12_dichvutuvankhac .container .other_service .slick-list .slick-track .service_item .body .text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150.5%;
+  text-align: center;
+}
+
+.site39_html_col12_dichvutuvankhac .container .other_service .slick-list .slick-track .service_item .btn_regis_now {
+  display: block;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site39_html_col12_dichvutuvankhac .container .other_service .slick-list .slick-track .service_item:nth-child(odd) {
+  background: #000;
+  color: #fff;
+}
+
+.site39_html_col12_dichvutuvankhac .container .other_service .slick-dots {
+  position: relative;
+  margin-top: 50px;
+}
+
+.site39_html_col12_dichvutuvankhac .container .other_service .slick-dots li button::before {
+  content: '';
+  height: 10px;
+  width: 10px;
+  border: 1px solid #c1c1c1;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.site39_html_col12_dichvutuvankhac .container .other_service .slick-dots li.slick-active button::before {
   background-color: #48D3D8;
   border-color: #48D3D8;
 }

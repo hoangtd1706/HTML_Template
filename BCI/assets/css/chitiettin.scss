@@ -23,6 +23,8 @@ main {
 @import 'chitiettin/content';
 
 .content_post {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E0E0E0;
 
     .description {
         margin-bottom: 30px;
@@ -103,6 +105,62 @@ main {
         }
     }
 
+}
+
+.relate_post {
+    margin-top: 40px;
+
+    .header {
+        .title {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 140.1%;
+            text-transform: uppercase;
+            color: #424242;
+        }
+    }
+
+    .list_post {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        .post_item {
+            width: calc(50% - 36px / 2);
+
+            .post_thumb {
+                a {
+                    position: relative;
+                    display: block;
+                    height: 100%;
+
+                    span {
+                        position: absolute;
+                        bottom: 0;
+                        background: #48D3D8;
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            .post_content {
+                margin-top: 18px;
+
+                a {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 19.2862px;
+                    line-height: 150.5%;
+                    color: #48D3D8;
+                }
+            }
+        }
+    }
 }
 
 

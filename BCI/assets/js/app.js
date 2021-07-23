@@ -111,3 +111,13 @@ let getMenu = (active_link) => {
 
     return menu;
 }
+
+let renderPost = (template, step) => {
+    let _template = template.html();
+    let link = template.attr('data-link');
+    for (var i = 1; i <= step; i++) {
+        template.append(_template);
+    }
+    template.find('.post_item .post_thumb a').attr('href', link + '.html');
+    template.find('.post_item .post_content a').attr('href', link + '.html')
+}

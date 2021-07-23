@@ -707,6 +707,11 @@ main {
   color: #5A5A5A;
 }
 
+.content_post {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
 .content_post .description {
   margin-bottom: 30px;
 }
@@ -794,6 +799,65 @@ main {
 
 .content_post ol li::marker {
   list-style-type: decimal;
+}
+
+.relate_post {
+  margin-top: 40px;
+}
+
+.relate_post .header .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140.1%;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.relate_post .list_post {
+  margin-top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.relate_post .list_post .post_item {
+  width: calc(50% - 36px / 2);
+}
+
+.relate_post .list_post .post_item .post_thumb a {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.relate_post .list_post .post_item .post_thumb a span {
+  position: absolute;
+  bottom: 0;
+  background: #48D3D8;
+  opacity: 0.8;
+}
+
+.relate_post .list_post .post_item .post_content {
+  margin-top: 18px;
+}
+
+.relate_post .list_post .post_item .post_content a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.2862px;
+  line-height: 150.5%;
+  color: #48D3D8;
 }
 
 /* footer */

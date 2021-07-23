@@ -12,6 +12,7 @@ $cl_dot:#0CB1B1;
 
 @import 'mixin/root';
 /* header  site39_header_col0*/
+@import 'mixin/button';
 @import 'mixin/header';
 /* end header */
 
@@ -28,6 +29,150 @@ main {
 @import 'mixin/staff';
 /* site39_bann_col0_slide3 */
 @import 'mixin/customer';
+
+/* site39_html_col12_dichvutuvankhac */
+.site39_html_col12_dichvutuvankhac {
+    position: relative;
+
+    .container {
+        position: relative;
+
+        .slide_title {
+            position: relative;
+
+            .sub_title {
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+
+                span {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 96px;
+                    line-height: 140.1%;
+                    text-transform: uppercase;
+                    color: rgba(66, 66, 66, 0.08);
+                }
+            }
+
+            .title {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 140.1%;
+                text-transform: uppercase;
+                color: #333333;
+                text-align: center;
+            }
+        }
+
+        .slide_arrow {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 0;
+
+            .btn_arrow {
+                position: absolute;
+                top: 50%;
+                cursor: pointer;
+
+                &.prev_arrow {
+                    left: -50px;
+                }
+
+                &.next_arrow {
+                    right: -50px;
+                }
+            }
+        }
+
+        .other_service {
+            margin-top: 57px;
+
+            .slick-list {
+                .slick-track {
+                    .service_item {
+                        padding: 30px;
+
+                        .header {
+                            .title {
+                                font-family: Montserrat;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 21px;
+                                line-height: 150.6%;
+                                text-align: center;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        .body {
+                            margin-top: 32px;
+
+                            .text {
+                                font-family: Montserrat;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 150.5%;
+                                text-align: center;
+                            }
+                        }
+
+                        .btn_regis_now {
+                            display: block;
+                            margin-top: 32px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        &:nth-child(odd) {
+                            background: #000;
+                            color: #fff;
+                        }
+
+
+                    }
+                }
+            }
+
+            .slick-dots {
+                position: relative;
+                margin-top: 50px;
+
+                li {
+                    button {
+                        &::before {
+                            content: '';
+                            height: 10px;
+                            width: 10px;
+                            border: 1px solid #c1c1c1;
+                            border-radius: 50%;
+                            opacity: 1;
+                        }
+                    }
+
+                    &.slick-active {
+                        button {
+                            &::before {
+                                background-color: #48D3D8;
+                                border-color: #48D3D8
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @import 'mixin/form';
 
 

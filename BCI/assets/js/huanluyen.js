@@ -39,7 +39,7 @@ $(document).ready(function () {
         }]
     });
 
-    
+
 
     $('#btn_next_3').on('click', function () {
         console.log('sdfsd')
@@ -78,4 +78,9 @@ $(document).ready(function () {
             $('#btn_next_4').addClass('hidden');
         }
     })
+    let string = window.location.href;
+    const active_link = string.substring(string.indexOf('BCI/') + 4, string.length - 5);
+    if (active_link === 'huanluyen') {
+        $('.btn_regis_now').attr('href', 'khoa-hoc-1.html');
+    }
 });
