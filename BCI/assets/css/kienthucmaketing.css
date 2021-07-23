@@ -109,6 +109,10 @@ input:focus-visible {
   outline: none;
 }
 
+body.active_menu {
+  overflow-y: hidden;
+}
+
 .container {
   max-width: 1170px;
   margin-left: auto;
@@ -180,7 +184,7 @@ canvas.CanvasDots {
 .site39_header_col0 .btn_menu {
   display: block;
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 30px;
   padding: 5px;
   height: 28px;
@@ -224,6 +228,10 @@ canvas.CanvasDots {
 
 .site39_header_col0 .btn_menu.active {
   top: 22px;
+}
+
+.site39_header_col0 .btn_menu.active ~ body {
+  overflow-y: hidden;
 }
 
 .site39_header_col0 .btn_menu.active .line {
@@ -1173,7 +1181,6 @@ main {
     display: block;
   }
   .site39_header_col0 .nav_bci .header-logo {
-    margin-left: 20px;
     height: 40px;
   }
   .site39_header_col0 .nav_bci .menu .menu-top {

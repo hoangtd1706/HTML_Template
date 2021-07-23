@@ -98,6 +98,10 @@ input {
     }
 }
 
+body.active_menu {
+    overflow-y: hidden;
+}
+
 
 
 .container {

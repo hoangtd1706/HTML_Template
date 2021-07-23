@@ -10,12 +10,10 @@ $(document).ready(function () {
         if ($(this).hasClass('active')) {
             $('.menu').addClass('active');
             $('.close_menu').addClass('active');
-            //$('.menu').css('right', 0);
-
+            $('html body').css('overflow', 'hidden')
         } else {
             $('.menu').removeClass('active');
             $('.close_menu').removeClass('active');
-            //$('.menu').css('right', -440);
         }
     })
 

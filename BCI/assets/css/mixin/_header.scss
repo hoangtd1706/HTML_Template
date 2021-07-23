@@ -27,7 +27,7 @@ $cl_dot:#0CB1B1;
     .btn_menu {
         display: block;
         position: absolute;
-        right: 20px;
+        right: 10px;
         top: 30px;
         padding: 5px;
         height: 28px;
@@ -67,6 +67,10 @@ $cl_dot:#0CB1B1;
 
         &.active {
             top: 22px;
+
+            ~ body {
+                overflow-y: hidden;
+            }
 
             .line {
                 background-color: #000;
