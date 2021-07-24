@@ -90,7 +90,7 @@
 
                 .post_item {
                     max-width: 415px;
-                    width: 50%;
+                    width: calc(50% - 36px / 2);
 
                     .post_thumb {
                         a {
@@ -101,6 +101,8 @@
 
                             img {
                                 height: 100%;
+                                width: 100%;
+                                object-fit: cover;
                                 transition: all .4s ease;
                             }
 
@@ -224,6 +226,92 @@
                 }
             }
         }
-
     }
+}
+
+@media (max-width:1000px) {
+    .site39_newcat_col12_kienthucmkt {
+        .cat_body {
+            flex-flow: row wrap;
+
+            .list_cat {
+                width: 100%;
+                background: #fff;
+                left: -10px;
+
+                ul {
+                    max-width: none;
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    background: #fff;
+                    overflow-x: scroll;
+                    z-index: 100;
+
+                    &.fixed_list {
+                        top: 56px;
+                        left: 0;
+                        padding: 30px 20px 0px 20px;
+                    }
+
+                    &::-webkit-scrollbar {
+                        height: 4px;
+                    }
+
+                    li {
+                        display: inline;
+                        margin-right: 40px;
+                        margin-bottom: 10px;
+                        order: 2;
+
+                        &.active {
+                            order: 1;
+                        }
+
+                        a {
+                            white-space: nowrap;
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+
+            .main_post {
+                max-width: none;
+
+                .list_post {
+                    margin-top: 20px;
+                    width: 100%;
+
+                    .post_item {
+                        max-width: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .site39_newcat_col12_kienthucmkt {
+        .cat_body {
+            .main_post {
+                .list_post {
+                    .post_item {
+                        width: 100%;
+
+                        &:nth-child(even) {
+                            margin-top: 30px;
+                        }
+
+                        &:nth-child(odd) {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

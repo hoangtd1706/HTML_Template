@@ -10,10 +10,15 @@ $(document).ready(function () {
         if ($(this).hasClass('active')) {
             $('.menu').addClass('active');
             $('.close_menu').addClass('active');
-            $('html body').css('overflow', 'hidden')
+            $('html').css({
+                'overflow': 'hidden'
+            });
         } else {
             $('.menu').removeClass('active');
             $('.close_menu').removeClass('active');
+            $('html').css({
+                'overflow': 'overlay'
+            });
         }
     })
 
@@ -23,6 +28,30 @@ $(document).ready(function () {
         $('.close_menu').removeClass('active');
         $('.menu').css('right', -440);
     })
+
+    $('.open_sub').on('click', function () {
+        $(this).parent().find('.sub_menu').addClass('active_sub');
+        $('.nav_bci .menu .menu-top li.menu-link').css({
+            'transform': 'translateX(320px)'
+        })
+        $('.nav_bci .menu .menu-top li.menu-link .sub_menu.active_sub').css({
+            'transform': 'translateX(-320px)'
+        })
+
+    })
+    $('.close_sub').on('click', function () {
+        $('.nav_bci .menu .menu-top li.menu-link').css({
+            'transform': 'translateX(0)'
+        })
+        $('.nav_bci .menu .menu-top li.menu-link .sub_menu.active_sub').css({
+            'transform': 'translateX(320px)'
+        })
+        $(this).parent().removeClass('active_sub');
+
+    })
+
+
+
 
     $('.to_top').on('click', function () {
         $("html, body").stop().animate({

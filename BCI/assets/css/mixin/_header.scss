@@ -68,7 +68,7 @@ $cl_dot:#0CB1B1;
         &.active {
             top: 22px;
 
-            ~ body {
+            ~body {
                 overflow-y: hidden;
             }
 
@@ -231,6 +231,16 @@ $cl_dot:#0CB1B1;
                         z-index: 10000;
                     }
 
+                    .open_sub {
+                        display: none;
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            content: '\2190';
+                        }
+                    }
+
                 }
             }
         }
@@ -280,6 +290,67 @@ $cl_dot:#0CB1B1;
         .nav_bci {
             .header-logo {
                 height: 33px;
+            }
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .site39_header_col0 {
+        .nav_bci {
+            .menu {
+                .menu-top {
+                    li {
+                        transition: all .4s ease;
+
+                        &.menu-link {
+                            display: flex;
+                            justify-content: flex-end;
+
+                            a {
+                                order: 2;
+                            }
+
+                            .sub_menu {
+                                background: transparent;
+                                display: flex;
+
+                                ul {
+                                    width: 100%;
+
+                                    .sub_link {
+                                        width: 300px;
+                                        right: -20px;
+
+                                        a {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+
+                                .close_sub {
+                                    &::before {
+                                        content: '\2192';
+                                    }
+                                }
+
+                                &.active_sub {
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+
+                            .open_sub {
+                                display: flex;
+                                order: 1;
+                                left: -20px;
+                            }
+
+                            &.active_sub {}
+
+                        }
+                    }
+                }
             }
         }
     }

@@ -404,6 +404,16 @@ canvas.CanvasDots {
   z-index: 10000;
 }
 
+.site39_header_col0 .nav_bci .menu .menu-top li .open_sub {
+  display: none;
+  position: relative;
+}
+
+.site39_header_col0 .nav_bci .menu .menu-top li .open_sub::before {
+  position: absolute;
+  content: '\2190';
+}
+
 .site39_header_col0.is-menu .head_bg {
   opacity: 1;
 }
@@ -439,6 +449,58 @@ canvas.CanvasDots {
 
 .site39_header_col0.minimal .nav_bci .header-logo {
   height: 33px;
+}
+
+@media (max-width: 1000px) {
+  .site39_header_col0 .nav_bci .menu .menu-top li {
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link a {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu {
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu ul {
+    width: 100%;
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu ul .sub_link {
+    width: 300px;
+    right: -20px;
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu ul .sub_link a {
+    font-size: 14px;
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu .close_sub::before {
+    content: '\2192';
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu.active_sub {
+    visibility: visible;
+    opacity: 1;
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .open_sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    left: -20px;
+  }
 }
 
 /* end header */

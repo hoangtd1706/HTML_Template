@@ -68,6 +68,9 @@ const active_link = string.substring(string.indexOf('BCI/') + 4, string.length -
 $(document).ready(function () {
     renderLine();
     renderMenu(active_link);
+
+    let sub_menu = $('.menu-link .sub_menu').append('<span class="close_sub"></span>')
+    $('.menu-link .sub_menu').parent().append('<span class="open_sub"></span>')
 })
 
 let renderMenu = (active_link) => {

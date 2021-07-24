@@ -107,8 +107,6 @@ main {
 
 }
 
-
-
 .relate {
     display: flex;
     flex-flow: row wrap;
@@ -251,13 +249,12 @@ main {
             }
         }
 
-
-    }
-
-    .relate {
-        .relate_post {
-            max-width: 100%;
+        .relate {
+            .relate_post {
+                max-width: 100%;
+            }
         }
+
     }
 
 }
@@ -301,6 +298,7 @@ main {
                             order: 2;
 
                             a {
+                                font-size: 22px;
                                 white-space: nowrap;
                             }
 
@@ -327,6 +325,18 @@ main {
                             max-width: none;
                             width: 90%;
                         }
+                    }
+                }
+            }
+        }
+
+        .relate {
+            .relate_post {
+                max-width: 100%;
+
+                .list_post {
+                    .post_item {
+                        width: 100%;
                     }
                 }
             }
