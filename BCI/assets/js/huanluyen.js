@@ -1,3 +1,9 @@
+AOS.init({
+    delay: 100, // values from 0 to 3000, with step 50ms
+    duration: 600, // values from 0 to 3000, with step 50ms
+    easing: 'ease-in-out',
+});
+
 $(document).ready(function () {
     let slide1 = $('.slide_service').slick({
         "slidesToShow": 3,
@@ -38,8 +44,6 @@ $(document).ready(function () {
             }
         }]
     });
-
-
 
     $('#btn_next_3').on('click', function () {
         console.log('sdfsd')
@@ -84,3 +88,36 @@ $(document).ready(function () {
         $('.btn_regis_now').attr('href', 'khoa-hoc-1.html');
     }
 });
+
+
+
+/* $(document).scroll(function () {
+    let top = $(window).scrollTop()
+    console.log(top);
+    let elem = $('.slide_service .slick-list .slick-track .slide_item:nth-child(odd) .service_item:nth-child(1)');
+    if (isInViewport(elem)) {
+        $('.slide_service .slick-list .slick-track .slide_item:nth-child(odd) .service_item:nth-child(1)').css({
+            'transform': 'rotateX(0)'
+        })
+        $('.slide_service .slick-list .slick-track .slide_item:nth-child(even) .service_item:nth-child(2)').css({
+            'transform': 'rotateX(0)'
+        })
+    } else {
+        $('.slide_service .slick-list .slick-track .slide_item:nth-child(odd) .service_item:nth-child(1)').css({
+            'transform': 'rotateX(60deg)'
+        })
+        $('.slide_service .slick-list .slick-track .slide_item:nth-child(even) .service_item:nth-child(2)').css({
+            'transform': 'rotateX(60deg)'
+        })
+    }
+})
+
+var isInViewport = function (elem) {
+    var bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}; */

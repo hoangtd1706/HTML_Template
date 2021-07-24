@@ -1,14 +1,10 @@
-$(document).ready(function () {
-    /* $(window).scroll(function () {
-        var aTop = $(window).scrollTop();
-        if (aTop > 244) {
-            $('.site39_header_col0').addClass('is-menu');
-        } else {
-            $('.site39_header_col0').removeClass('is-menu');
-        }
-    }) */
+AOS.init({
+    delay: 100, // values from 0 to 3000, with step 50ms
+    duration: 600, // values from 0 to 3000, with step 50ms
+    easing: 'ease-in-out',
+});
 
-    
+$(document).ready(function () {
 
     $(window).scroll(function () {
         let page_width = $('body').width();

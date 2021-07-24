@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="animejs/anime.min.js"></script>
+</head>
+
+<body>
+    <style>
+        svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+        }
+
+        .svg_pick {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            z-index: 100;
+        }
+
+        .svg_1 {
+            background-color: #000;
+        }
+
+        .svg_2 {
+            background-color: rgb(208, 82, 82);
+        }
+
+        .svg_3 {
+            background-color: rgb(28, 175, 40);
+        }
+
+        .svg_item {
+            width: calc(100% / 3);
+            height: calc(100vh / 3);
+            opacity: .2;
+        }
+    </style>
+    <svg id="morph" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="morph" d="M1 1V529.5C78.5 597.5 118.5 726 306.5 726C494.5 726 513.5 626.5 629 529.5V1H1Z"
+            fill="#C4C4C4" />
+    </svg>
+    <div class="frame_svg">
+        <div class="svg_main">
+
+        </div>
+        <div class="svg_pick">
+            <div class="svg_item svg_1" data-svg="svg_1"></div>
+            <div class="svg_item svg_2" data-svg="svg_2"></div>
+            <div class="svg_item svg_3" data-svg="svg_3"></div>
+            <div class="svg_item svg_3" data-svg="svg_4"></div>
+            <div class="svg_item svg_1" data-svg="svg_5"></div>
+            <div class="svg_item svg_2" data-svg="svg_6"></div>
+            <div class="svg_item svg_1" data-svg="svg_7"></div>
+            <div class="svg_item svg_2" data-svg="svg_8"></div>
+            <div class="svg_item svg_3" data-svg="svg_9"></div>
+        </div>
+    </div>
+
+
+    <script src="animejs/js/test.js"></script>
+</body>
+
+</html>

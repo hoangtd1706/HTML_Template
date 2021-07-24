@@ -130,6 +130,7 @@
                             .service_item {
                                 &:nth-child(1) {
                                     background-color: #000;
+                                    transition: all .6s ease;
 
                                     .service_title,
                                     .service_body {

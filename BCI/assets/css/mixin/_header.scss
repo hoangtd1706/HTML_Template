@@ -320,7 +320,7 @@ $cl_dot:#0CB1B1;
 
                                     .sub_link {
                                         width: 300px;
-                                        right: -20px;
+                                        right: -10px;
 
                                         a {
                                             font-size: 14px;
@@ -329,6 +329,12 @@ $cl_dot:#0CB1B1;
                                 }
 
                                 .close_sub {
+                                    position: absolute;
+                                    right: 0;
+                                    font-size: 30px;
+                                    top: -20px;
+                                    font-weight: 600;
+
                                     &::before {
                                         content: '\2192';
                                     }

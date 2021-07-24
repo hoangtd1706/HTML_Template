@@ -592,10 +592,17 @@ canvas.CanvasDots {
   }
   .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu ul .sub_link {
     width: 300px;
-    right: -20px;
+    right: -10px;
   }
   .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu ul .sub_link a {
     font-size: 14px;
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu .close_sub {
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    top: -20px;
+    font-weight: 600;
   }
   .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu .close_sub::before {
     content: '\2192';
@@ -880,6 +887,8 @@ main {
 
 .site39_html_col0_huanluyendn .service_top .slide_service .slick-list .slick-track .slide_item:nth-child(odd) .service_item:nth-child(1) {
   background-color: #000;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .site39_html_col0_huanluyendn .service_top .slide_service .slick-list .slick-track .slide_item:nth-child(odd) .service_item:nth-child(1) .service_title,

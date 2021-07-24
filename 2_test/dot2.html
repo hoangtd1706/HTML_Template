@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        #dotCanvas {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="dotCanvas"></canvas>
+    </div>
+    <script>
+        var canvas = document.querySelector("#dotCanvas");
+        var ctx = canvas.getContext('2d');
+        ctx.canvas.width = 1000;
+        ctx.canvas.height = 1000;
+        canvas.addEventListener('mousemove', function () {
+            mouseOver(canvas, ctx, true)
+        });
+
+        var mouseOver = (canvas, ctx, cursor) => {
+            if (cursor) {
+                PosX = getPositionX(event);
+                PosY = getPositionY(event);
+            } else {
+                PosX = -100;
+                PosY = -100;
+            }
+        }
+
+        var getPositionX = (event) => {
+            CursorX = event.clientX;
+            return CursorX;
+        }
+
+        var getPositionY = (event) => {
+            CursorY = event.clientY;
+            return CursorY;
+        }
+    </script>
+</body>
+
+</html>

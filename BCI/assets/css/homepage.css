@@ -592,10 +592,17 @@ canvas.CanvasDots {
   }
   .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu ul .sub_link {
     width: 300px;
-    right: -20px;
+    right: -10px;
   }
   .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu ul .sub_link a {
     font-size: 14px;
+  }
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu .close_sub {
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    top: -20px;
+    font-weight: 600;
   }
   .site39_header_col0 .nav_bci .menu .menu-top li.menu-link .sub_menu .close_sub::before {
     content: '\2192';
