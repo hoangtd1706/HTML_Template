@@ -1,29 +1,49 @@
 "use strict";
 
+AOS.init({
+  delay: 100,
+  // values from 0 to 3000, with step 50ms
+  duration: 600,
+  // values from 0 to 3000, with step 50ms
+  easing: 'ease-in-out'
+});
+/* jQuery(document).on('scroll', function () {
+    jQuery('.box_item').css("left", Math.max(100 - 0.2 * window.scrollY, 1) + "vw");
+}) */
+
 $(document).ready(function () {
-  /* $(window).scroll(function () {
-      var aTop = $(window).scrollTop();
-      if (aTop > 244) {
-          $('.site39_header_col0').addClass('is-menu');
-      } else {
-          $('.site39_header_col0').removeClass('is-menu');
-      }
-  }) */
+  var textWrapper = document.querySelector('.animate_text');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
   $(window).scroll(function () {
     var page_width = $('body').width();
     var page_height = $('body').height();
     var window_height = $(window).height();
     var toTop = $(this).scrollTop();
-    var document_height = $(document).height(); //console.log(page_height - toTop - 1000);
-
-    if (toTop < 100) {
-      $('.Line').css('height', '0px');
-    } else if (toTop > 100 && page_height - toTop - 1000 > 10) {
-      $('.Line').css('height', '505px');
-      $('.Line__svg').css('transform', 'matrix(1,0,0,1,0,' + (-717 - toTop));
-    } else {
-      $('.Line').css('height', '100vh');
-    }
+    var document_height = $(document).height();
+    isInViewport('.animate_text') ? anime.timeline({
+      loop: false
+    }).add({
+      targets: '.animate_text .letter',
+      translateX: [40, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: "easeOutExpo",
+      duration: 1200,
+      delay: function delay(el, i) {
+        return 500 + 200 * i;
+      }
+    }) : anime.timeline({
+      loop: false
+    }).add({
+      targets: '.animate_text .letter',
+      translateX: [0, -30],
+      opacity: [1, 0],
+      easing: "easeInExpo",
+      duration: 1100,
+      delay: function delay(el, i) {
+        return 1000 + 100 * i;
+      }
+    });
 
     if (page_height - toTop - 1000 > 10) {
       $('.to_top').hide();

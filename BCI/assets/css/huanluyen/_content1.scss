@@ -27,21 +27,33 @@
     .service_top {
         position: relative;
 
-        .icon_decor {
+        .decor {
             position: absolute;
             width: 100%;
             height: 100%;
 
             .decor_left {
                 position: absolute;
-                top: -111px;
-                left: -111px;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    position: absolute;
+                    left: -122px;
+                    top: -111px;
+                }
             }
 
             .decor_right {
                 position: absolute;
-                right: -98px;
-                bottom: 0;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    position: absolute;
+                    right: -91px;
+                    bottom: -91px;
+                }
             }
         }
 
@@ -271,8 +283,20 @@
     }
 
     .service_bot {
+        position: relative;
         margin-top: 115px;
         z-index: 1000;
+
+        .decor {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            img {
+                position: absolute;
+                left: -188px;
+            }
+        }
 
 
         .header {
@@ -287,6 +311,7 @@
                 color: #424242;
             }
         }
+
 
         .content {
             display: flex;

@@ -1,0 +1,240 @@
+.site39_newcat_col12_kienthucmkt {
+  position: relative;
+  padding-top: 100px;
+}
+.site39_newcat_col12_kienthucmkt .cat_title .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140.1%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+}
+.site39_newcat_col12_kienthucmkt .cat_body {
+  display: flex;
+  margin-top: 62px;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .list_cat {
+  width: 260px;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .list_cat ul {
+  max-width: 260px;
+  width: 100%;
+  position: relative;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .list_cat ul.fixed_list {
+  position: fixed;
+  top: 120px;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .list_cat ul::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 100%;
+  left: -20px;
+  background: #48D3D8;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .list_cat ul li {
+  position: relative;
+  margin-bottom: 30px;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .list_cat ul li a {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150.6%;
+  text-transform: uppercase;
+  color: #4F4F4F;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 30px 0px;
+  transition: all 0.3s;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .list_cat ul li.active a {
+  font-weight: 600;
+  color: #48D3D8;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .list_cat ul li:hover a {
+  color: #48D3D8;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post {
+  max-width: 870px;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item {
+  max-width: 415px;
+  width: calc(50% - 36px / 2);
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item .post_thumb a {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item .post_thumb a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item .post_thumb a .text_thumb {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #414142;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150.36%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 6px 10px;
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item .post_thumb a .text_thumb:hover {
+  background: #48D3D8;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item .post_content {
+  margin-top: 20px;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item .post_content a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 150.5%;
+  color: #333333;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item:nth-child(even) {
+  margin-top: 60px;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item:hover .post_thumb a img {
+  transform: scale(1.1);
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item:hover .post_thumb a .text_thumb {
+  background: #48D3D8;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item:hover .post_content a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150.5%;
+  color: #48D3D8;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .pagination-all {
+  position: relative;
+  margin-top: 40px;
+  right: 0;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .pagination-all .pagination {
+  float: right;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .pagination-all .pagination li {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  margin: 0 0 0 9px;
+  align-items: center;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .pagination-all .pagination li a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .pagination-all .pagination li.active {
+  background: #48D3D8;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .pagination-all .pagination li.active a {
+  color: #fff;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .pagination-all .pagination li:hover {
+  background: #48D3D8;
+}
+.site39_newcat_col12_kienthucmkt .cat_body .main_post .pagination-all .pagination li:hover a {
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .site39_newcat_col12_kienthucmkt .cat_body {
+    flex-flow: row wrap;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .list_cat {
+    width: 100%;
+    background: #fff;
+    left: -10px;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .list_cat ul {
+    max-width: none;
+    width: 100%;
+    position: relative;
+    display: flex;
+    background: #fff;
+    overflow-x: scroll;
+    z-index: 100;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .list_cat ul.fixed_list {
+    top: 56px;
+    left: 0;
+    padding: 30px 20px 0px 20px;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .list_cat ul::-webkit-scrollbar {
+    height: 4px;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .list_cat ul li {
+    display: inline;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    order: 2;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .list_cat ul li.active {
+    order: 1;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .list_cat ul li a {
+    white-space: nowrap;
+    font-size: 22px;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .main_post {
+    max-width: none;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item {
+    max-width: none;
+  }
+}
+@media (max-width: 768px) {
+  .site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item {
+    width: 100%;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item:nth-child(even) {
+    margin-top: 30px;
+  }
+  .site39_newcat_col12_kienthucmkt .cat_body .main_post .list_post .post_item:nth-child(odd) {
+    margin-top: 30px;
+  }
+}

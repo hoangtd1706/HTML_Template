@@ -1,4 +1,4 @@
-/* end footer */
+@charset "UTF-8";
 .close_menu {
   background-color: transparent;
   z-index: -1;
@@ -14,25 +14,19 @@
 }
 
 @media (max-width: 1366px) {
-  .site39_header_col0 .nav {
+  .site39_header_col0 .nav_bci {
     max-width: 1170px;
   }
-  .site39_header_col0 .nav .header-logo {
+  .site39_header_col0 .nav_bci .header-logo {
     height: 60px;
   }
-  .site39_header_col0 .nav .menu .menu-top li.menu-link {
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link {
     font-size: 13px;
   }
 }
 @media (min-width: 1201px) {
   .site39_header_col0 .btn_menu {
     display: none;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .site39_foot_col0_bci .social {
-    right: 6px;
-    position: fixed;
   }
 }
 @media (max-width: 1200px) {
@@ -42,11 +36,10 @@
   .site39_header_col0 .btn_menu {
     display: block;
   }
-  .site39_header_col0 .nav .header-logo {
-    margin-left: 20px;
+  .site39_header_col0 .nav_bci .header-logo {
     height: 40px;
   }
-  .site39_header_col0 .nav .menu .menu-top {
+  .site39_header_col0 .nav_bci .menu .menu-top {
     display: none;
     position: fixed;
     right: 0px;
@@ -56,18 +49,18 @@
     z-index: 1000;
     transition: all 2.5s;
   }
-  .site39_header_col0 .nav .menu.active {
+  .site39_header_col0 .nav_bci .menu.active {
     display: block;
     right: 0;
     animation: menuMove 0.8s;
   }
-  .site39_header_col0 .nav .menu.active .menu-top {
+  .site39_header_col0 .nav_bci .menu.active .menu-top {
     display: block;
     flex-flow: column;
     align-items: flex-end;
     padding: 100px 26px;
   }
-  .site39_header_col0 .nav .menu.active .menu-top li {
+  .site39_header_col0 .nav_bci .menu.active .menu-top li {
     float: right;
     margin-top: 30px;
     font-size: 20px;
@@ -90,6 +83,7 @@
     right: 0;
   }
 }
+/* Danh mục kinh doanh */
 @media (max-width: 1000px) {
   .site39_pro_col12_danhmuckd .pro_item .pro_content .content_title h3 {
     font-size: 28px;
@@ -157,42 +151,12 @@
   .site39_pro_col12_danhmuckd .pro_item {
     margin: 50px 0;
   }
-
-  .site39_foot_col0_bci {
-    height: auto;
-    padding-bottom: 40px;
-    flex-flow: wrap;
+}
+@media (max-width: 1600px) {
+  .site39_header_col0 .nav_bci {
+    max-width: 1170px !important;
   }
-  .site39_foot_col0_bci .container .foot_content {
-    flex-flow: wrap;
-  }
-  .site39_foot_col0_bci .container .foot_content .foot_item.item_left::before {
-    top: -40px;
-  }
-  .site39_foot_col0_bci .container .foot_content .foot_item.item_left p {
-    padding-top: 25px;
-    font-size: 24px;
-  }
-  .site39_foot_col0_bci .container .foot_content .foot_item.item_right {
-    margin-top: 76px;
-    width: 100%;
-    max-width: unset;
-  }
-  .site39_foot_col0_bci .container .foot_content .foot_item.item_right .foot_logo {
-    float: left;
-  }
-  .site39_foot_col0_bci .container .foot_content .foot_item.item_right .content {
-    float: left;
-  }
-  .site39_foot_col0_bci .container .foot_content .foot_item.item_right .content p {
-    text-align: left;
-  }
-  .site39_foot_col0_bci .social {
-    position: relative;
-    width: 100%;
-    padding: 15px;
-  }
-  .site39_foot_col0_bci .social .foot_icon {
-    flex-flow: row;
+  .site39_header_col0 .nav_bci .menu .menu-top li.menu-link {
+    font-size: 14px;
   }
 }

@@ -3,7 +3,54 @@
     padding-top: 123px;
     z-index: 1000;
 
+    .icon_decor {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+
     .container {
+        position: relative;
+
+        .decor {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+
+            .decor_left {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+
+                img {
+                    position: absolute;
+
+                    &.img_top {
+                        top: -76px;
+                        left: -212px;
+                    }
+
+                    &.img_mid {
+                        top: 50%;
+                        left: -373px;
+                    }
+                }
+            }
+
+            .decor_right {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    position: absolute;
+                    top: 106px;
+                    right: -228px;
+                }
+            }
+        }
+
         .content {
             position: relative;
 

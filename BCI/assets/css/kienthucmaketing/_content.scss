@@ -15,9 +15,68 @@
         }
     }
 
+    .decor_1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .decor_left,
+        .decor_right {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .decor_left {
+            img {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        .decor_right {
+            img {
+                position: absolute;
+                right: 0;
+                top: 373px;
+            }
+        }
+    }
+
     .cat_body {
+        position: relative;
         display: flex;
         margin-top: 62px;
+
+        .decor_2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            .decor_left,
+            .decor_right {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .decor_left {
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: -60px;
+                }
+            }
+
+            .decor_right {
+                img {
+                    position: absolute;
+                    bottom: 25%;
+                    right: -150px;
+                }
+            }
+        }
 
         .list_cat {
             width: 260px;
