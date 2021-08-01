@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style_1 {
+            position: relative;
+            border: none;
+            width: 200px;
+            height: 40px;
+            font-size: 18px;
+            background-color: transparent;
+            z-index: 100;
+        }
+
+        .style_1::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: 200px;
+            background: url(https://i2.wp.com/onlygfx.com/wp-content/uploads/2017/07/red-watercolor-brush-stroke-2-16.png);
+            background-size: 200px 40px;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="style_1">sdfsdfsdfsd</button>
+</body>
+
+</html>

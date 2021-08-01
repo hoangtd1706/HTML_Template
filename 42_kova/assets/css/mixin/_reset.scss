@@ -1,0 +1,151 @@
+* {
+  scroll-behavior: smooth;
+  //   font-family: "Montserrat", sans-serif;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid #48d3d8;
+  }
+}
+
+button {
+  &:focus-visible,
+  &:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  position: absolute;
+  width: 8px;
+  background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #97979760;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(151, 151, 151, 0.905);
+}
+
+input {
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+body.active_menu {
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Line,
+.Line__mask {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.Line {
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+  height: 0;
+  transition: all 0.8s ease;
+
+  .Line__svg {
+    svg {
+      stroke-width: 1px;
+      fill-rule: evenodd;
+      fill: none;
+      stroke: #48d3d8;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  /* width */
+  ::-webkit-scrollbar {
+    position: absolute;
+    width: 4px;
+    background-color: transparent;
+  }
+}
+
+canvas {
+  &.CanvasDots {
+    position: absolute;
+  }
+}
